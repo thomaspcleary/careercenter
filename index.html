@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>SRA International Career Center</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap theme -->
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/styles.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+  <style>
+     .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #036;
+    background-color: #fff;
+    background-image: none !important;
+        border-bottom: 3px solid #253D68;
+        margin-bottom: -3px;
+        font-weight: bold;
+}
+  </style>
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+  
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="top_section clearfix hidden" style="background: #f7f7f7; ">
+        <div class="container">
+
+<ul style="list-style: none;">
+        <li style="display: inline-block"><a href="https://www.facebook.com/SocResAdminINTL"><i class="fa fa-facebook"></i></a></li>
+                <li style="display: inline-block"><a href="https://twitter.com/SocietyRAIntl"><i class="fa fa-twitter"></i></a></li>
+                <li style="display: inline-block"><a href="http://www.linkedin.com/groups?gid=1959806&amp;mostPopular="><i class="fa fa-linkedin"></i></a></li>
+                <li style="display: inline-block; color: #ccc;">|</li>
+                <li style="display: inline-block"><a href="http://www.srainternational.org">www.srainternational.org</a></li>
+                <li style="display: inline-block; color: #ccc;">|</li>
+                <li style="display: inline-block"><a href="index.cfm?fuseaction=careerCenter.viewLogin">Career Center Login</a></li>
+            </ul>
+
+        </div>
+    </div>
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#">
+        <img src="img/sra-logo-only-sm.jpg" width="166" height="20" alt=""/>
+        <h1 style="margin-top: 0; color: #253D68; font-size: 30px;">Career Center</h1></a></div>
+		<div id="navbar" class="navbar-collapse navbar-right collapse">
+			<ul class="nav navbar-nav">
+        
+        <li class="dropdown active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seekers <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="active"><a href="#">Job Search</a></li>
+            <li><a href="#">Manage Resume</a></li>
+            <li><a href="#">Saved Searches</a></li>
+            <li><a href="#">Saved Jobs</a></li>
+            <li><a href="#">Job Applications</a></li>
+            <li><a href="#">Account Profile</a></li>
+          </ul>
+        </li>
+                
+                
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="employers.html">Welcome</a></li>
+            <li><a href="employers-job-post.html">Post Jobs</a></li>
+            <li><a href="#">Resume Search</a></li>
+            <li><a href="#">Saved Searches</a></li>
+            <li><a href="#">Saved Resumes</a></li>
+            <li><a href="#">Job Posting Reports</a></li>
+            <li><a href="#">Account Profile</a></li>
+          </ul>
+          </li>
+				<li><a href="jobs.html">Pricing</a></li>
+				<!-- ###
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            ### -->
+				<li><a href="contact.html">Contact</a></li>
+        <li style="border-left: 1px solid #333;"><a href="#loginModal" data-toggle="modal" data-target="#loginModal">Career Center Log In</a></li>
+			</ul>
+      
+		</div>
+		<!--/.nav-collapse --> 
+	</div>
+</nav>
+
+<!-- /container -->
+<section class="below-fh">
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 stack-space-lg job-list">
+      <ol class="row breadcrumb" style="background: none; margin-bottom: 0;">
+  <li><a href="#">Home</a></li>
+  
+        <li>Job Search</li>
+</ol>
+			<div class="row clearfix">
+        <div class="col-sm-6 col-sm-push-6" style="padding-top: 20px;">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search by keyword">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">GO</button>
+      </span>
+    </div><!-- /input-group -->
+          <a href="#" role="button" onClick="$('#filter-options').slideToggle();">Advanced Search</a>
+
+          <!-- ### FILTER OPTIONS ### -->
+           <div id="filter-options" class="clearfix" style="display: none;">
+                       
+             <button class="close" onClick="$('#filter-options').slideToggle();"><span class="glyphicon glyphicon-remove-sign" style="color: #000 !important;" ></span></button>
+             
+           <ul style="padding-left: 0; list-style-type: none; float: left; margin-right: 15px;">
+             <li><strong>Industries</strong>
+               <ul style="padding-left: 10px; list-style-type: none; margin-top: 5px;">
+                 <li><label for="all-indy" class="normal"><input type="checkbox" id="all-indy" /> SELECT ALL</label></li>
+                 <li><label for="college" class="normal"><input type="checkbox" id="college" /> College/University</label></li>
+                 <li><label for="hospital" class="normal"><input type="checkbox" id="hospital" /> Hospital</label></li>
+                 <li><label for="non-profit" class="normal"><input type="checkbox" id="non-profit" /> Non-Profit</label></li>
+                 <li><label for="commercial" class="normal"><input type="checkbox" id="commercial" /> Commercial</label></li>
+                 <li><label for="govt" class="normal"><input type="checkbox" id="govt" /> Government</label></li>
+                 <li><label for="legal" class="normal"><input type="checkbox" id="legal" /> Legal</label></li>
+                 <li><label for="other" class="normal"><input type="checkbox" id="other"/> Other</label></li>
+
+               </ul>
+              </li>
+            </ul>
+            <ul style="padding-left: 0; list-style-type: none; float: left; margin-right: 15px;">
+             <li><strong>Categories</strong>
+               <ul style="padding-left: 10px; list-style-type: none; margin-top: 5px;">
+                 <li><label for="all-cat" class="normal"><input type="checkbox" id="all-cat" /> Administrator or Administrative</label></li>
+                 <li><label for="admin" class="normal"><input type="checkbox" id="admin" /> Administrator or Administrative</label></li>
+                 <li><label for="business-manager" class="normal"><input type="checkbox" id="business-manager" /> Business Manager</label></li>
+                 <li><label for="compliance" class="normal"><input type="checkbox" id="compliance" /> Compliance</label></li>
+                 <li><label for="dept-admin" class="normal"><input type="checkbox" id="dept-admin" /> Department Administrator</label></li>
+                 <li><label for="fn-ops" class="normal"><input type="checkbox" id="fn-ops" /> Finance, Operations</label></li>
+                 <li><label for="government" class="normal"><input type="checkbox" id="government" /> Government</label></li>
+                 <li><label for="grants" class="normal"><input type="checkbox" id="grants"/> Grants and Contracts</label></li>
+                 <li><label for="irb" class="normal"><input type="checkbox" id="irb"/> Institutional Review Board</label></li>
+                 <li><label for="other-categ" class="normal"><input type="checkbox" id="other-categ"/> Other</label></li>
+                 <li><label for="president" class="normal"><input type="checkbox" id="president"/> President, CEO, Executive Director</label></li>
+                 <li><label for="ra-mgr" class="normal"><input type="checkbox" id="ra-mgr"/> Research Administrator/Manager</label></li>
+                 <li><label for="spon-proj" class="normal"><input type="checkbox" id="spon-proj"/> Sponsored Projects/Programs</label></li>
+
+               </ul>
+              </li>
+            </ul>
+            <ul style="padding-left: 0; list-style-type: none; float: left; margin-right: 15px;">
+             <li><strong>Job Types</strong>
+               <ul style="padding-left: 10px; list-style-type: none; margin-top: 5px;">
+                 <li><label for="ft" class="normal"><input type="checkbox" id="ft" /> Full Time</label></li>
+                 <li><label for="pt" class="normal"><input type="checkbox" id="pt" /> Part Time</label></li>
+                 <li><label for="contract" class="normal"><input type="checkbox" id="contract" /> Contract</label></li>
+                 <li><label for="temp-perm" class="normal"><input type="checkbox" id="temp-perm" /> Temp to Perm</label></li>
+                 <li><label for="internship" class="normal"><input type="checkbox" id="internship" /> Internship</label></li>
+               </ul>
+              </li>
+            </ul>
+             <ul style="padding-left: 0; list-style-type: none; float: left; margin-right: 15px;">
+             <li><strong>Education</strong>
+               <ul style="padding-left: 10px; list-style-type: none; margin-top: 5px;">
+                 <li><label for="edu-all" class="normal"><input type="checkbox" id="edu-all" /> Select All</label></li>
+                 <li><label for="hs" class="normal"><input type="checkbox" id="hs" /> High School</label></li>
+                 <li><label for="some-college" class="normal"><input type="checkbox" id="some-college" /> Some College</label></li>
+                 <li><label for="two-yr" class="normal"><input type="checkbox" id="two-yr" /> 2-Year Degree</label></li>
+                 <li><label for="four-year" class="normal"><input type="checkbox" id="four-year" /> 4-Year Degree</label></li>
+                 <li><label for="masters" class="normal"><input type="checkbox" id="masters" /> Masters</label></li>
+                 <li><label for="doctorate" class="normal"><input type="checkbox" id="doctorate" /> Doctorate</label></li>
+               </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- ### END FILTER OPTIONS ### -->
+          
+  </div><!-- /.col-lg-6 -->
+        
+				<div class="col-sm-6 col-sm-pull-6 col-xs-12">
+					<h2 style="margin-bottom: 0">Current Opportunities </h2>
+          <p class="lead pull-left" style="font-weight: 400;">Showing <strong>30</strong> jobs
+from last 90 days </p>
+				</div>
+				
+        
+          
+           
+        <div class="col-xs-12 alert alert-info clearfix hidden">
+          <p id="filter-results" style="color: #000;"> <strong>FILTERED RESULTS BY:</strong> <button class="btn btn-default">Option 1 <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button> <button class="btn btn-default">Option 2 <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button></p>
+          
+          
+        </div>
+				
+      <div id="job-spotlight" class="col-md-3 col-md-push-9 col-sm-4 col-sm-push-8 col-xs-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading" style="background: #253D68"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Job Spotlight</div>
+          <div class="panel-body">
+            <h3 style="margin-top: 0;"><a href="jobs-software-engineer.html">Content Project Manager</a></h3>
+            <p class="date-loc clearfix"><span class="date-loc" ><em><strong>SRA International</strong> - Hunt Valley, MD</em></span></p>
+            <p>SRA International is looking for a part-time project manager for the Education and Professional Development Micro-Accreditation Task Force.</p>
+            <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>
+          </div>
+        </div>
+      </div>
+        
+			<div id="search-results" class="col-md-9 col-md-pull-3 col-sm-8 col-sm-pull-4 col-xs-12">
+          <div class="job">
+            <h3><a href="cpm.html">Content Project Manager</a></h3>
+            <p class="tight">
+            <span class="date-loc col-sm-6 row "><strong>SRA International</strong> - Hunt Valley, MD</span> <span style="margin-right: 15px;">  </span> 
+              <span class="date-loc pull-right">Posted 11 Days ago </span></p>
+            <p>SRA International is looking for a part-time project manager for the Education and Professional Development Micro-Accreditation Task Force.</p>
+            <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>
+          </div>
+
+         <div class="job">	        
+	          
+	            <h3>
+                <a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13731">Research Compliance Officer</a></h3>
+           <p class="tight"><strong>University of Nevada Reno</strong> -Reno, NV <span class="date-loc pull-right">Posted 11 days ago</span></p>
+	              
+	            <p>The University of Nevada, Reno Research Integrity Office is recruiting for a Research Compliance Officer. </p>
+            <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>	          
+	          
+	        </div>
+	        
+	      <div class="job">	
+	        
+	          
+	          <h3><a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13730">Associate Vice President for Research</a></h3>
+            <p class="tight"><strong>University of Wyoming</strong> - Laramie, WY <span class="pull-right">Posted 12 days ago</span>
+	              	
+	              </p>
+	          <p>Provides primary support to the Vice President for Research and Economic Development for the administrative oversight of all contract and grant pre-award, award set-up and post-award research administration.  </p>
+            <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>	
+	          
+        </div>
+	        
+	      
+	      <div class="job">	
+	          
+	            <h3><a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13729">Director, Technology Transfer and Research Products Center</a></h3>
+	             <p class="tight"><strong>University of Wyoming</strong> - Laramie, WY
+	              <span class="pull-right">Posted
+                  12 days ago</span>	              	
+	              </p>
+          <p>The University of Wyoming (UW) is seeking an innovative, energetic and experienced individual to serve as Director of the Office of Technology Transfer and Research Products Center (WY-TTRPC).</p>
+          <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>
+        </div>
+	      
+	       <div class="job">	
+	           <h3><a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13728">Grant Officer</a></h3>
+	              <p><strong>Salt Lake Community College</strong> - 
+	              Salt Lake City, UT <span class="pull-right">
+                  Posted 17 days ago</span>
+	              </p>
+	            
+	          <p>The Office of Sponsored Projects inspires superior grant practice by developing and maintaining a robust grant administration infrastructure, and providing exceptional service and leadership in the pursuit and management of scholarly grant-related activities at Salt Lake Community College. </p>
+          <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>
+        </div>
+	        
+	      
+	        <div class="job featured-job" style="background-color: #f9f9f9; border: 2px solid #ff8100; padding: 10px;">
+	            <p style="color:#ff8100; margin-bottom: 0;"><i class="fa fa-star-o"></i> <strong>Featured Job </strong><i class="fa fa-star-o"></i></p>
+	              <h3> <a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13727">Content Project Manager </a></h3>
+	              
+              <p><strong>SRA International</strong> - Arlington, VA
+	              <span class="pull-right">
+                  Posted 17 days ago</span>
+              </p>
+            <p>SRA International is looking for a part-time project manager for the Education and Professional Development Micro-Accreditation Task Force.</p>
+            <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>
+        </div>
+	      
+        <div class="job">	
+	           <h3><a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13726">Director of Administrative and Research Systems</a></h3>
+	              <p><strong>Stony Brook University</strong> - 
+	              Stony Brook, NY <span class="pull-right">
+                  Posted 18 days ago</span>
+	              </p>
+	            
+	          <p>Preferred Qualifications: Advanced degree. Knowledge of research administration. Experience with IT solutions in a research or university environment. </p>
+          <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>
+        </div>
+        
+	        <div class="job">	
+	           <h3><a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13724">Senior Grants Administrator - Morgridge College Of Education</a></h3>
+	              <p><strong>University of Denver</strong> - 
+	              Denver, CO <span class="pull-right">
+                  Posted 19 days ago</span>
+	              </p>
+	            
+	          <p>Position Summary The role of the Senior Grants Administrator is to support to the college in the development and management of grants, gifts, and contracts.  </p>
+          <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>
+        </div>
+	      
+	        
+	      
+	        
+	      
+	        
+	      
+	        
+	        
+	      
+	        
+	      
+	        
+	      
+	        
+	        
+	      
+	        
+      </div>
+			
+			
+      </div>
+
+
+
+			
+			
+			
+
+
+
+			
+			
+			
+
+
+
+			
+
+
+
+			
+			
+
+
+
+			
+			
+			
+
+
+
+			
+			
+			
+			
+
+
+
+			
+			
+			
+
+
+
+			
+
+
+			
+			
+			
+
+
+
+			
+			
+			
+
+
+
+			
+			
+			
+			
+		</div>
+	</div>
+</div>
+  </section>
+  
+  <!-- ### LOG IN MODAL ### -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style=" background: #0d2857; /*background-color: #0969d8;
+    border-top: 3px solid #0863cc;
+    border-bottom: 1px solid #0b77ec; */">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white; text-shadow: none; border: 2px solid white; border-radius: 50%;width: 24px; opacity: 1;"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="loginModalLabel" style="   font-family: 'Source Sans Pro', sans-serif; color: white; font-weight: 400;">Career Center Log In</h4>
+      </div>
+      <div class="modal-body" style="background: #0d2857">
+	<form action="index.cfm?fuseaction=utils.authenticate" method="post" name="loginFrm" id="loginFrm">
+		<input type="Hidden" name="redirect" value="index.cfm?fuseaction=resumeSearch.resetsearch">
+		  <div class="form-group">
+	               	<label for="name" class="control-label" style="color: white;"><strong>Username</strong></label>
+	               	<input name="login" class="form-control" type="text" id="login" value="">
+    </div>
+    <div class="form-group stack-space-lg">
+                   	<label for="name" class="control-label" style="color: white;"><strong>Password</strong></label>
+                   	<input name="password" class="form-control" type="password" id="password" value="">
+    </div>
+    <div class="clearfix stack-space">
+				<button class="but_lock btn btn-primary btn-block" ><i class="fa fa-lock"></i> Login</button>
+				
+				
+    </div>
+    </form>
+        
+        <p><a href="javascript:void(0);" class="login-help-links" style="color: white; text-decoration: underline;" onClick="$('#need-acct').hide(); $('#forgot-login').slideToggle();" >Forgot login info?</a> | <a href="javascript:void(0);" class="login-help-links" style="color: white; text-decoration: underline; float: right;" onClick="$('#forgot-login').hide(); $('#need-acct').slideToggle();">Need an account?</a></p>
+    <style>
+      
+    </style>
+	
+	<div id="need-acct" style="background: #f7f7f7; padding: 15px; margin: 0 -15px -15px; display: none;">
+    <div class="clearfix">
+      <span class="blue-triangle-down-right"></span>
+    </div>  
+	  <ul style="padding-left: 20px;">
+			  <li><strong>Non-Members: </strong>You may create a <a href="https://netforum.avectra.com/eweb/DynamicPage.aspx?Site=sra&amp;WebCode=Verify">non-member account here</a>. After you create an account, you will need to return to the Career Center annd login before being able to access this functionality.
+                          <br>
+                          <br>
+              </li>
+	          <li><strong>Become a Member: </strong>To receive discounted job postings and all the benefits of being an SRA Member, <a href="https://www.srainternational.org/sra03/template/tntbjoin.cfm?id=593">click here to join</a>, or, you may contact someone in our office by calling 703-741-0140 </li>
+	  </ul>
+        </div>
+        
+  <div id="forgot-login" style="background: #f7f7f7; padding: 15px; margin: 0 -15px -15px; display: none;">
+    <div class="clearfix">
+      <span class="blue-triangle-down-left"></span>
+    </div>  
+	  <p>No problem! Enter your e-mail address below. You will be emailed a link to change your password within the next 30 minutes.&nbsp; To ensure delivery, please add <a href="mailto:membership@srainternational.org">membership@srainternational.org</a> to your safe sender list.</p>
+    <div class="form-group">
+      <label class="control-label" for="pri-email">Primary E-mail Address:</label>
+      <input type="email" class="form-control" />
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+      <button class="btn btn-primary btn-block">Submit</button>
+      </div>
+      <div class="col-xs-6">
+      <button class="btn btn-default btn-block">Cancel</button>
+      </div>
+        </div>
+    </div>
+
+
+
+            
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- ### END LOG IN MODAL ### -->
+  
+<footer class="footer">
+<style>
+  .footer {background:#333; color: white;}
+  .footer a {color:#f7f7f7;}
+  </style>
+        <div class="container">
+			
+			<div class="col-sm-4">
+
+                <h3>SRA Career Center</h3>
+
+                <ul class="list">
+                    <li><a href="index.cfm?fuseaction=seekers.viewGateway"><i class="fa fa-angle-right"></i> Job Seekers</a></li>
+                    <li><a href="index.cfm?fuseaction=employers.viewGateway"><i class="fa fa-angle-right"></i> Employers</a></li>
+                    <li><a href="index.cfm?fuseaction=careerCenter.viewFees"><i class="fa fa-angle-right"></i> Pricing</a></li>
+                    <li><a href="http://www.srainternational.org/contact"><i class="fa fa-angle-right"></i> Contact</a></li>
+                </ul>
+
+            </div><!-- end section -->
+
+            <div class="col-sm-4">
+
+                <h3>SRA International</h3>
+
+                <ul class="list">
+                    <li><a href="http://srainternational.org/about-sra-international"><i class="fa fa-angle-right"></i> About SRA International</a></li>
+                    <li><a href="http://srainternational.org/learn"><i class="fa fa-angle-right"></i> SRA Learning Institute</a></li>
+                    <li><a href="http://srainternational.org/publications"><i class="fa fa-angle-right"></i> SRA Publications</a></li>
+                    <li><a href="http://srainternational.org/membership"><i class="fa fa-angle-right"></i> SRA Membership</a></li>
+                </ul>
+            </div><!-- end section -->
+
+            <div class="col-sm-4 last">
+
+                <div class="clearfix">
+                    <h3>Contact Us</h3>
+                    <p >Society of Research Administrators International<br>1560 Wilson Blvd., Suite 310<br>Arlington, VA 22209</p>
+                    <p>+1 703-741-0140<br>FAX +1 703-741-0142</p>
+                  <a href="http://www.srainternational.org" target="_blank" style="margin-right: 10px;">www.srainternational.org</a>
+                  <a href="https://www.facebook.com/SocResAdminINTL" target="_blank" style="margin-right: 10px;"><i class="fa fa-facebook"></i></a>
+               <a href="https://twitter.com/SocietyRAIntl" target="_blank" style="margin-right: 10px;"><i class="fa fa-twitter"></i></a><a href="http://www.linkedin.com/groups?gid=1959806&amp;mostPopular=" target="_blank" style="margin-right: 10px;"><i class="fa fa-linkedin"></i></a>
+                
+                </div>
+
+            </div><!-- end section -->
+
+        </div>
+
+    </footer>
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="js/vendor/jquery/jquery.1.12.4.min.js"></script> 
+<!-- ###
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    ### --> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="js/ie10-viewport-bug-workaround.js"></script> 
+
+<!-- ### MATCH HEIGHT from http://codepen.io/micahgodbolt/pen/FgqLc ### --> 
+
+<script>
+equalheight = function(container){
+var currentTallest = 0,
+     currentRowStart = 0,
+     rowDivs = new Array(),
+     $el,
+     topPosition = 0;
+
+ $(container).each(function() {
+   $el = $(this);
+   $($el).height('auto')
+
+   topPostion = $el.position().top;
+
+
+
+   if (currentRowStart != topPostion) {
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+       rowDivs[currentDiv].height(currentTallest);
+     }
+
+     rowDivs.length = 0; // empty the array
+     currentRowStart = topPostion;
+     currentTallest = $el.height();
+     rowDivs.push($el);
+   } else {
+
+     rowDivs.push($el);
+
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+
+  }
+
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+
+     rowDivs[currentDiv].height(currentTallest);
+
+   }
+
+ });
+
+}
+
+
+
+$(window).load(function() {
+
+  equalheight('.inside-full-height');
+
+	equalheight('.inside-qr-height');
+
+});
+
+
+
+
+
+$(window).resize(function(){
+
+  equalheight('.inside-full-height');
+
+	equalheight('.inside-qr-height');
+
+});
+
+</script> 
+
+<!-- ### END MATCH HEIGHT from http://codepen.io/micahgodbolt/pen/FgqLc ### -->
+
+</body>
+</html>

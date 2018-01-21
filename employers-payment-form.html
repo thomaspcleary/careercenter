@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>SRA International Career Center</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap theme -->
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/styles.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style>
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: #036;
+  background-color: #fff;
+  background-image: none !important;
+  border-bottom: 3px solid #036;
+  margin-bottom: -3px;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="top_section clearfix hidden" style="background: #f7f7f7; ">
+      <div class="container">
+        <ul style="list-style: none;">
+          <li style="display: inline-block"><a href="https://www.facebook.com/SocResAdminINTL"><i class="fa fa-facebook"></i></a></li>
+          <li style="display: inline-block"><a href="https://twitter.com/SocietyRAIntl"><i class="fa fa-twitter"></i></a></li>
+          <li style="display: inline-block"><a href="http://www.linkedin.com/groups?gid=1959806&amp;mostPopular="><i class="fa fa-linkedin"></i></a></li>
+          <li style="display: inline-block; color: #ccc;">|</li>
+          <li style="display: inline-block"><a href="http://www.srainternational.org">www.srainternational.org</a></li>
+          <li style="display: inline-block; color: #ccc;">|</li>
+          <li style="display: inline-block"><a href="index.cfm?fuseaction=careerCenter.viewLogin">Career Center Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"> <img src="img/sra-logo-only-sm.jpg" width="166" height="20" alt=""/>
+        <h1 style="margin-top: 0; color: #036; font-size: 30px;">Career Center</h1>
+        </a></div>
+      <div id="navbar" class="navbar-collapse navbar-right collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seekers <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Job Search</a></li>
+              <li><a href="#">Manage Resume</a></li>
+              <li><a href="#">Saved Searches</a></li>
+              <li><a href="#">Saved Jobs</a></li>
+              <li><a href="#">Job Applications</a></li>
+              <li><a href="#">Account Profile</a></li>
+            </ul>
+          </li>
+          <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="employers.html">Overview</a></li>
+              <li class="active"><a href="#">Post Jobs</a></li>
+              <li><a href="#">Resume Search</a></li>
+              <li><a href="#">Saved Searches</a></li>
+              <li><a href="#">Saved Resumes</a></li>
+              <li><a href="#">Job Posting Reports</a></li>
+              <li><a href="#">Account Profile</a></li>
+            </ul>
+          </li>
+          <li><a href="jobs.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li style="border-left: 1px solid #333;"><a href="#">Career Center Log In</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+  </nav>
+</header>
+<section class="no-subnav">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 stack-space-lg">
+        <ol class="row breadcrumb" style="background: none; margin-bottom: 0;">
+          <li><a href="employers.html">Overview</a></li>
+          <li><a href="employers-job-post.html">Post a Job</a></li>
+          <li>Payment Form</li>
+        </ol>
+        <h1>Payment Form</h1>
+        <div id="wizard" class="form_wizard wizard_horizontal col-sm-9">
+      <ul class="wizard_steps anchor">
+                        <li>
+                          <a href="#step-1" class="done" isdone="1" rel="1">
+                            <span class="step_no">1</span>
+                            <span class="step_descr">
+                                              Post a New Job</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-2" class="selected" isdone="0" rel="2">
+                            <span class="step_no">2</span>
+                            <span class="step_descr">
+                                              Submit Payment
+                                          </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-3" class="disabled" isdone="0" rel="3">
+                            <span class="step_no">3</span>
+                            <span class="step_descr">
+                                              Confirmation
+                                          </span>
+                          </a>
+                        </li>
+                        
+                      </ul>
+      </div>
+        
+        <div class="clearfix">
+          
+          <div class="col-sm-9" style="border: 1px solid #FF9900;">
+            
+            <form action="https://careercenter.srainternational.org/fb/index.cfm?fuseaction=jobs.processPayment" method="post" name="0.1_form" target="_blank" onsubmit="try {return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);} catch (e) {return false;}" class="form-horizontal">
+              <h3 class="stack-space">Payment Options</h3>
+              <div class="form-group clearfix stack-space">
+                <label class="col-sm-4 control-label">Select Package:</label>
+                <div class="col-sm-8 radio-group">
+                  <select name="postingPricingID" class="form-control stack-space">
+                    <option value="4">1 (30 Day) Posting: $500.00</option>
+                    <option value="5">5 (30 Day) Postings : $2,375.00</option>
+                    <option value="6">10 (30 Day) Postings : $4,275.00</option>
+                  </select>
+                  <label class="normal" for="payment-method_online">
+                    <input type="radio" name="payment-method" id="payment-method_online" value="0" style="margin-bottom:10px;">
+                    Pay On-line Now </label>
+                  <label class="normal text-left" for="mailInPayment">
+                  <input type="radio" name="payment-method" id="mailInPayment" value="1">
+                  Mail Payment To:
+                  <blockquote style="margin-top: 10px;"> <strong>Attn:</strong> Career Center <br>
+                    Society of Research Administrators International <br>
+                    1560 Wilson Blvd., Suite 310 <br>
+                    Arlington, VA 22209<br>
+                    <br>
+                    <em><strong class="required">NOTE:</strong> Your information will appear on the next page, which you may print out and mail to us along with payment.</em></blockquote>
+                  </label>
+                </div>
+              </div>
+              <div class="even-container" >
+                <h3 class="stack-space">Billing Information</h3>
+                <div class="stack-space clearfix ">
+                  <label class="btn btn-default btn-block" for="imisTempIndicator">
+                    <input type="checkbox" name="imisTempIndicator">
+                    Use membership account information</label>
+                </div>
+                <div class="form-group clearfix stack-space">
+                  <label class="col-sm-4 control-label" for="firstName">First Name: <span class="required">*</span></label>
+                  <div class="col-sm-8">
+                    <input type="text" id="firstName" class="form-control" value="Thomas"  maxlength="50" >
+                  </div>
+                </div>
+                <div class="form-group clearfix stack-space">
+                  <label class="col-sm-4 control-label" for="lastName" >Last Name: <span class="required">*</span></label>
+                  <div class="col-sm-8">
+                    <input type="text" id="lastName" class="form-control" value="Cleary" maxlength="50" >
+                  </div>
+                </div>
+                <div class="form-group clearfix stack-space">
+                  <label class="col-sm-4 control-label" for="addressLine1">Address Line 1: </label>
+                  <div class="col-sm-8">
+                    <input type="text" name="addressLine1" value="8245 Reichard Road" class="form-control" maxlength="255">
+                  </div>
+                </div>
+                <div class="form-group clearfix stack-space">
+                  <label class="col-sm-4 control-label" for="addressLine2">Address Line 2:</label>
+                  <div class="col-sm-8">
+                    <input type="text" id="addressLine2" value="" maxlength="255" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group clearfix stack-space">
+                  <label class="col-sm-4 control-label" for="city">City: </label>
+                  <div class="col-sm-8">
+                    <input type="text" id="city" value="Fairplay" maxlength="50" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group clearfix stack-space">
+                  <label class="col-sm-4 control-label" for="state">State: </label>
+                  <div class="col-sm-8">
+                    <input type="text" id="state" value="MD" maxlength="50" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group clearfix stack-space">
+                  <label class="col-sm-4 control-label" for="zipCode">Zip Code: </label>
+                  <div class="col-sm-8">
+                    <input type="text" id="zipCode" value="21733"  maxlength="10" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group clearfix stack-space">
+                  <label class="col-sm-4 control-label" for="daytimePhone">Daytime Phone: <span class="required">*</span></label>
+                  <div class="col-sm-8">
+                    <input type="text" id="daytimePhone" value="(240) 500-6353" maxlength="15" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group clearfix stack-space">
+                  <label class="col-sm-4 control-label" for="emailAddress">Email: <span class="required">*</span></label>
+                  <div class="col-sm-8">
+                    <input type="email" id="emailAddress" value="thomas.p.cleary@gmail.com"  maxlength="50" class="form-control">
+                    <span class="help-block">
+                    <input type="checkbox" name="sendConfirmationEmail" value="1" checked="">
+                    Send me a confirmation e-mail.</span> </div>
+                </div>
+                <div class="form-group clearfix stack-space-lg">
+                  <label class="col-sm-4 control-label" for="altEmailAddress">Alternate Email:
+                  </label>
+                  <div class="col-sm-8">
+                    <input type="text" id="altEmailAddress" value=""  maxlength="50" class="form-control">
+                    <span class="help-block"><em class="normal">Enter an additional e-mail address
+                    of the person whom you wish to receive the confirmation e-mail and
+                    posting receipt.</em></span> </div>
+                </div>
+              </div>
+              <div>
+                <h3 class="stack-space">Payment Method <span class="normal">(On-line Payment Only)</span></h3>
+                <div class="form-group clearfix stack-space">
+                  <label class="col-sm-4 control-label" for="creditCardType">Credit Card: <span class="required">*</span></label>
+                  <div class="col-sm-8">
+                    <select id="creditCardType" class="form-control">
+                      <option>Select...</option>
+                      <option value="Visa">Visa</option>
+                      <option value="MasterCard">Master Card</option>
+                      <option value="AmericanExpress">American Express</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group clearfix stack-space">
+                  <label class="col-sm-4 control-label" for="creditCardNumber">Card or Account Number: <span class="required">*</span></label>
+                  <div class="col-sm-8">
+                    <input type="text" id="creditCardNumber" value=""  maxlength="50" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group clearfix stack-space-lg">
+                  <label class="col-sm-4 control-label">Expiration Date: <span class="required">*</span></label>
+                  <div class="col-sm-4 col-xs-6">
+                    <select id="creditCardExpirationMonth" class="form-control">
+                      <option>Select...</option>
+                      <option value="1">January</option>
+                      <option value="2">February</option>
+                      <option value="3">March</option>
+                      <option value="4">April</option>
+                      <option value="5">May</option>
+                      <option value="6">June</option>
+                      <option value="7">July</option>
+                      <option value="8">August</option>
+                      <option value="9">September</option>
+                      <option value="10">October</option>
+                      <option value="11">November</option>
+                      <option value="12">December</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4 col-xs-6">
+                    <select name="creditCardExpirationYear" class="form-control">
+                      <option>Select...</option>
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029">2029</option>
+                      <option value="2030">2030</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="even-container">
+                  <h3 class="stack-space">Comments <span class="small">(Optional)</span></h3>
+                  <div class="stack-space-lg clearfix">
+                    <label class="control-label col-sm-4" for="paymentComments">Please enter any comments or special instructions for your order: </label>
+                    <div class="col-sm-8">
+                    <textarea rows="6" id="paymentComments" class="form-control" placeholder="Enter comments here"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!-- ### BUTTONS  ### -->
+       <div class=" form-group stack-space-lg clearfix">
+         <div class="col-sm-6">
+         <button type="submit" class="btn-lg btn-primary btn-block">Submit Job <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+         </div>
+         <div class="col-sm-6"><button type="button" class="btn-lg btn-default btn-block"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save as Draft</button> 
+       </div>
+       
+      </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-3">
+            <div class="well stack-space text-center" style="background: #ffc; height: 200px"> Placeholder for Ad Space </div>
+            
+            <div class="well stack-space-lg text-center" style="background: azure; height: 200px"> Placeholder for Ad Space </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  
+  <div class="container">
+    <div class="col-sm-4">
+      <h3>SRA Career Center</h3>
+      <ul class="list">
+        <li><a href="index.cfm?fuseaction=seekers.viewGateway"><i class="fa fa-angle-right"></i> Job Seekers</a></li>
+        <li><a href="index.cfm?fuseaction=employers.viewGateway"><i class="fa fa-angle-right"></i> Employers</a></li>
+        <li><a href="index.cfm?fuseaction=careerCenter.viewFees"><i class="fa fa-angle-right"></i> Pricing</a></li>
+        <li><a href="http://www.srainternational.org/contact"><i class="fa fa-angle-right"></i> Contact</a></li>
+      </ul>
+    </div>
+    <!-- end section -->
+    
+    <div class="col-sm-4">
+      <h3>SRA International</h3>
+      <ul class="list">
+        <li><a href="http://srainternational.org/about-sra-international"><i class="fa fa-angle-right"></i> About SRA International</a></li>
+        <li><a href="http://srainternational.org/learn"><i class="fa fa-angle-right"></i> SRA Learning Institute</a></li>
+        <li><a href="http://srainternational.org/publications"><i class="fa fa-angle-right"></i> SRA Publications</a></li>
+        <li><a href="http://srainternational.org/membership"><i class="fa fa-angle-right"></i> SRA Membership</a></li>
+      </ul>
+    </div>
+    <!-- end section -->
+    
+    <div class="col-sm-4 last">
+      <div class="clearfix">
+        <h3>Contact Us</h3>
+        <p >Society of Research Administrators International<br>
+          1560 Wilson Blvd., Suite 310<br>
+          Arlington, VA 22209</p>
+        <p>+1 703-741-0140<br>
+          FAX +1 703-741-0142</p>
+      </div>
+    </div>
+    <!-- end section --> 
+    
+  </div>
+</footer>
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="js/vendor/jquery/jquery.1.12.4.min.js"></script> 
+<!-- ###
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    ### --> 
+
+<script src="js/bootstrap.min.js"></script> 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="js/ie10-viewport-bug-workaround.js"></script> 
+<script>
+  CKEDITOR.replace( 'job-desc' );
+</script> 
+
+<!-- ### MATCH HEIGHT from http://codepen.io/micahgodbolt/pen/FgqLc ### --> 
+
+<script>
+equalheight = function(container){
+var currentTallest = 0,
+     currentRowStart = 0,
+     rowDivs = new Array(),
+     $el,
+     topPosition = 0;
+
+ $(container).each(function() {
+   $el = $(this);
+   $($el).height('auto')
+
+   topPostion = $el.position().top;
+
+
+
+   if (currentRowStart != topPostion) {
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+       rowDivs[currentDiv].height(currentTallest);
+     }
+
+     rowDivs.length = 0; // empty the array
+     currentRowStart = topPostion;
+     currentTallest = $el.height();
+     rowDivs.push($el);
+   } else {
+
+     rowDivs.push($el);
+
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+
+  }
+
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+
+     rowDivs[currentDiv].height(currentTallest);
+
+   }
+
+ });
+
+}
+
+
+
+$(window).load(function() {
+
+  equalheight('.inside-full-height');
+
+	equalheight('.inside-qr-height');
+
+});
+
+
+
+
+
+$(window).resize(function(){
+
+  equalheight('.inside-full-height');
+
+	equalheight('.inside-qr-height');
+
+});
+
+</script> 
+
+<!-- ### END MATCH HEIGHT from http://codepen.io/micahgodbolt/pen/FgqLc ### -->
+
+</body>
+</html>
