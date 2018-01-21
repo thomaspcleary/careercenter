@@ -86,9 +86,10 @@
               <li><a href="#">Account Profile</a></li>
             </ul>
           </li>
-          <li><a href="jobs.html">Pricing</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li style="border-left: 1px solid #333;"><a href="#">Career Center Log In</a></li>
+          <li style="border-left: 1px solid #333;"><a href="#" class="user-login" style="background: url(img/user-icon.svg) left 12px no-repeat; background-size: 16px 16px; padding-left: 20px; margin-left: 10px; ">
+            Thomas Cleary <span class="caret"></span></a></li>
         </ul>
       </div>
       <!--/.nav-collapse --> 
@@ -137,8 +138,10 @@
         <div class="clearfix">
           
           <div class="col-sm-9" style="border: 1px solid #FF9900;">
-            
+            <!-- ### COMMENTED OUT UNTIL NEEDED
             <form action="https://careercenter.srainternational.org/fb/index.cfm?fuseaction=jobs.processPayment" method="post" name="0.1_form" target="_blank" onsubmit="try {return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);} catch (e) {return false;}" class="form-horizontal">
+              ### -->
+            <form action="employers-post-confirmation.html" class="form-horizontal">
               <h3 class="stack-space">Payment Options</h3>
               <div class="form-group clearfix stack-space">
                 <label class="col-sm-4 control-label">Select Package:</label>

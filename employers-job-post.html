@@ -39,7 +39,7 @@
 </style>
   </head>
 
-  <body>
+  <body onLoad="$('#loginModal').modal('show');">
 
 <!-- Fixed navbar -->
 <header>
@@ -87,7 +87,7 @@
             <li><a href="#">Account Profile</a></li>
           </ul>
           </li>
-        <li><a href="jobs.html">Pricing</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
         <!-- ###
              <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -103,7 +103,10 @@
             </li>
             ### -->
         <li><a href="contact.html">Contact</a></li>
-        <li style="border-left: 1px solid #333;"><a href="#">Career Center Log In</a></li>
+        <li style="border-left: 1px solid #333;"><a href="#" class="login-link">Career Center Log In</a>
+          <a href="#" class="user-login" style="background: url(img/user-icon.svg) left 12px no-repeat; background-size: 16px 16px; padding-left: 20px; margin-left: 10px; display: none; ">
+            Thomas Cleary <span class="caret"></span></a>
+          </li>
       </ul>
       </div>
     <!--/.nav-collapse --> 
@@ -645,11 +648,88 @@
   </div>
   </div>
     </section>
-<footer class="footer">
+    
+     <!-- ### LOG IN MODAL ### -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style=" background: #0d2857; /*background-color: #0969d8;
+    border-top: 3px solid #0863cc;
+    border-bottom: 1px solid #0b77ec; */">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white; text-shadow: none; border: 2px solid white; border-radius: 50%;width: 24px; opacity: 1;"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="loginModalLabel" style="   font-family: 'Source Sans Pro', sans-serif; color: white; font-weight: 400;">Career Center Log In</h4>
+      </div>
+      <div class="modal-body" style="background: #0d2857">
+	<!-- ###
+<form action="index.cfm?fuseaction=utils.authenticate" method="post" name="loginFrm" id="loginFrm">
+### -->
+    <form>
+		<input type="Hidden" name="redirect" value="index.cfm?fuseaction=resumeSearch.resetsearch">
+		  <div class="form-group">
+	               	<label for="name" class="control-label" style="color: white;"><strong>Username</strong></label>
+	               	<input name="login" class="form-control" type="text" id="login" value="thomas.p.cleary@gmail.com">
+    </div>
+    <div class="form-group stack-space-lg">
+                   	<label for="name" class="control-label" style="color: white;"><strong>Password</strong></label>
+                   	<input name="password" class="form-control" type="password" id="password" value="testing">
+    </div>
+    <div class="clearfix stack-space">
+				<button class="but_lock btn btn-primary btn-block" data-dismiss="modal" onClick="$('.login-link').hide(); $('.user-login').show();"><i class="fa fa-lock"></i> Login</button>
+				
+				
+    </div>
+    </form>
+        
+        <p><a href="javascript:void(0);" class="login-help-links" style="color: white; text-decoration: underline;" onClick="$('#need-acct').hide(); $('#forgot-login').slideToggle();" >Forgot login info?</a> | <a href="javascript:void(0);" class="login-help-links" style="color: white; text-decoration: underline; float: right;" onClick="$('#forgot-login').hide(); $('#need-acct').slideToggle();">Need an account?</a></p>
     <style>
-  .footer {background:#333; color: white;}
-  .footer a {color:#f7f7f7;}
-  </style>
+      
+    </style>
+	
+	<div id="need-acct" style="background: #f7f7f7; padding: 15px; margin: 0 -15px -15px; display: none;">
+    <div class="clearfix">
+      <span class="blue-triangle-down-right"></span>
+    </div>  
+	  <ul style="padding-left: 20px;">
+			  <li><strong>Non-Members: </strong>You may create a <a href="https://netforum.avectra.com/eweb/DynamicPage.aspx?Site=sra&amp;WebCode=Verify">non-member account here</a>. After you create an account, you will need to return to the Career Center annd login before being able to access this functionality.
+                          <br>
+                          <br>
+              </li>
+	          <li><strong>Become a Member: </strong>To receive discounted job postings and all the benefits of being an SRA Member, <a href="https://www.srainternational.org/sra03/template/tntbjoin.cfm?id=593">click here to join</a>, or, you may contact someone in our office by calling 703-741-0140 </li>
+	  </ul>
+        </div>
+        
+  <div id="forgot-login" style="background: #f7f7f7; padding: 15px; margin: 0 -15px -15px; display: none;">
+    <div class="clearfix">
+      <span class="blue-triangle-down-left"></span>
+    </div>  
+	  <p>No problem! Enter your e-mail address below. You will be emailed a link to change your password within the next 30 minutes.&nbsp; To ensure delivery, please add <a href="mailto:membership@srainternational.org">membership@srainternational.org</a> to your safe sender list.</p>
+    <div class="form-group">
+      <label class="control-label" for="pri-email">Primary E-mail Address:</label>
+      <input type="email" class="form-control" />
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+      <button class="btn btn-primary btn-block">Submit</button>
+      </div>
+      <div class="col-xs-6">
+      <button class="btn btn-default btn-block">Cancel</button>
+      </div>
+        </div>
+    </div>
+
+
+
+            
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- ### END LOG IN MODAL ### -->
+  
+    
+<footer class="footer">
+  
     <div class="container">
     <div class="col-sm-4">
         <h3>SRA Career Center</h3>
@@ -721,6 +801,14 @@
       });
   </script>
 <!-- ### END MULTISELECT AND EK'S CUSTOMIZATIONS ### -->
+    
+<!-- ### LOAD LOGIN MODAL ON PAGE LOAD 
+    <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#loginModal').modal('show');
+    });
+</script>
+### -->
     
 
 <script>
