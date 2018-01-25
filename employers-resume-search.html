@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+  <title>SRA International Career Center</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap theme -->
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <style>
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: #036;
+  background-color: #fff;
+  background-image: none !important;
+  border-bottom: 3px solid #036;
+  margin-bottom: -3px;
+  font-weight: bold;
+}
+</style>
+  </head>
+
+  <body onLoad="$('#loginModal').modal('show');">
+
+<!-- Fixed navbar -->
+<header>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="top_section clearfix hidden" style="background: #f7f7f7; ">
+    <div class="container">
+        <ul style="list-style: none;">
+        <li style="display: inline-block"><a href="https://www.facebook.com/SocResAdminINTL"><i class="fa fa-facebook"></i></a></li>
+        <li style="display: inline-block"><a href="https://twitter.com/SocietyRAIntl"><i class="fa fa-twitter"></i></a></li>
+        <li style="display: inline-block"><a href="http://www.linkedin.com/groups?gid=1959806&amp;mostPopular="><i class="fa fa-linkedin"></i></a></li>
+        <li style="display: inline-block; color: #ccc;">|</li>
+        <li style="display: inline-block"><a href="http://www.srainternational.org">www.srainternational.org</a></li>
+        <li style="display: inline-block; color: #ccc;">|</li>
+        <li style="display: inline-block"><a href="index.cfm?fuseaction=careerCenter.viewLogin">Career Center Login</a></li>
+      </ul>
+      </div>
+  </div>
+    <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"> <img src="img/sra-logo-only-sm.jpg" width="166" height="20" alt=""/>
+      <h1 style="margin-top: 0; color: #036; font-size: 30px;">Career Center</h1>
+      </a></div>
+    <div id="navbar" class="navbar-collapse navbar-right collapse">
+        <ul class="nav navbar-nav">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seekers <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Job Search</a></li>
+            <li><a href="#">Manage Resume</a></li>
+            <li><a href="#">Saved Searches</a></li>
+            <li><a href="#">Saved Jobs</a></li>
+            <li><a href="#">Job Applications</a></li>
+            <li><a href="#">Account Profile</a></li>
+          </ul>
+          </li>
+        <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="employers.html">Overview</a></li>
+            <li class="active"><a href="#">Post Jobs</a></li>
+            <li><a href="#">Resume Search</a></li>
+            <li><a href="#">Saved Searches</a></li>
+            <li><a href="#">Saved Resumes</a></li>
+            <li><a href="#">Job Posting Reports</a></li>
+            <li><a href="#">Account Profile</a></li>
+          </ul>
+          </li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <!-- ###
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            ### -->
+        <li><a href="contact.html">Contact</a></li>
+        <li style="border-left: 1px solid #333;"><a href="#" class="login-link">Career Center Log In</a>
+          <a href="#" class="user-login" style="background: url(img/user-icon.svg) left 12px no-repeat; background-size: 16px 16px; padding-left: 20px; margin-left: 10px; display: none; ">
+            Thomas Cleary <span class="caret"></span></a>
+          </li>
+      </ul>
+      </div>
+    <!--/.nav-collapse --> 
+  </div>
+  </nav>
+    </header>
+<section class="no-subnav">
+    
+
+<div class="container">
+<div class="row">
+    <div class="col-xs-12 stack-space-lg">
+    <ol class="row breadcrumb" style="background: none; margin-bottom: 0;">
+        <li><a href="employers.html">Overview</a></li>
+        <li>Resume Search</li>
+      </ol>
+      <h1>Search SRA Resumes</h1>
+      
+      
+   
+    
+      <div class="col-sm-9">
+        <div style="border: 1px solid #FF9900; padding: 15px; margin: 0 -15px;">
+     <form action="#">
+       
+        <div class="form-group form-horizontal clearfix">
+          <label class="col-sm-4 control-label">Keywords: </label>
+          <div class="col-sm-8">
+          <input type="text" class="form-control" placeholder="Search by..." value="Director" />
+            
+          </div>
+        </div>
+       <!-- ### CONTACT INFO ### -->
+       <!-- ### END EVEN CONTAINER ### -->
+        
+       <!-- ### JOB INFO ### -->
+       
+        
+       <!-- ### BACKGROUND INFO ### -->
+       <div class="even-container" style="margin-bottom: 15px">
+        <h3 class="stack-space">Background Information</h3>  
+        <div class="form-group form-horizontal clearfix">
+         <label class="col-sm-4 control-label" for="exp-years">Desired Years of Experience:</label>
+           <div class="col-sm-8">
+          <input type="text" class="form-control" id="exp-years" />
+             <span class="help-block"><em>Enter in a digit or date range</em></span>
+         </div>
+        </div>
+       
+       
+       <div class="form-group form-horizontal clearfix">
+         <label class="col-sm-4 control-label" for="work-auth">Security Clearance:</label>
+           <div class="col-sm-8">
+             <label class="control-label normal" for="no-clearance" style="margin-right: 10px;"><input type="radio" name="clearance" id="no-clearance"> None</label>
+             <label class="control-label normal" for="no-clearance"><input type="radio" name="clearance" id="active-clearance"> Active</label>
+           </div>
+        </div>
+       
+       <div class="form-group form-horizontal clearfix">
+         <label class="col-sm-4 control-label" for="exp-years">Select the desired options from each category below that this job would apply:</label>
+          <div class="col-sm-8">
+            
+            <label class="control-label clearfix" for="industries">Industries</label>
+            <select id="industries" class="form-control" multiple="multiple">
+            <option value="college">College/University</option>
+                  <option value="hospital">                    Hospital</option>
+                 <option value="non-profit">
+                    Non-Profit</option>
+                  <option value="commercial">
+                    Commercial</option>
+                  <option value="govt">
+                    Government</option>
+                  <option value="legal">
+                    Legal</option>
+                  <option value="other">
+                    Other</option>
+            </select>
+            <label class="control-label" for="categories">Categories</label>
+            <select id="categories" multiple="multiple">
+                <option value="all-cat">
+                  Administrator or Administrative</option>
+                  <option value="admin">
+                    Administrator or Administrative</option>
+                 <option value="business-manager">
+                   Business Manager</option>
+                  <option value="compliance">
+                    Compliance</option>
+                 <option value="dept-admin">
+                   Department Administrator</option>
+                  <option value="fn-ops">
+                    Finance, Operations</option>
+                  <option value="government">
+                    Government</option>
+                  <option value="grants">
+                    Grants and Contracts</option>
+                  <option value="irb">
+                    Institutional Review Board</option>
+                  <option value="other-categ">
+                    Other</option>
+                  <option value="president">
+                    President, CEO, Executive Director</option>
+                  <option value="ra-mgr">
+                    Research Administrator/Manager</option>
+                  <option value="spon-proj">
+                    Sponsored Projects/Programs</option>
+            </select>
+            <label class="control-label" for="job-types">Job Types</label>
+            <select id="job-types" multiple="multiple">
+              <option value="ft">
+                Full Time</option>
+                  <option value="pt">
+                    Part Time</option>
+                  <option value="contract">
+                    Contract</option>
+                 <option value="temp-perm">
+                   Temp to Perm</option>
+                  <option value="internship">
+                    Internship</option>
+              </select>
+            <label class="control-label" for="education">Education</label>
+            <select id="education" multiple="multiple">
+                <option value="hs">
+                  High School</option>
+                 <option value="some-college">
+                   Some College</option>
+                 <option value="two-yr">
+                   2-Year Degree</option>
+                  <option value="four-year">
+                    4-Year Degree</option>
+                  <option value="masters">
+                    Masters</option>
+                  <option value="doctorate">
+                    Doctorate</option>
+              </select>
+         </div>
+        </div>
+       </div>
+
+       <!-- ### BUTTONS  ### -->
+       <div class="row clearfix">
+         <div class="col-sm-4 col-sm-push-4 form-group">
+         <button type="button" class="btn btn-primary btn-block text-left" onClick="$('#resumes').show();"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search </button>
+         </div>
+         
+       
+      </div>
+               </form>
+        </div>
+        
+        
+        
+        <div id="resumes" style="display: none;">
+          <div class="clearfix">
+          <h2 class="pull-left">Resume Search Results</h2> <div class="col-sm-4 row pull-right">
+            <select class="form-control btn btn-default" style="margin-top: 20px; border: 1px solid #3370cc;">
+              <option value="90days">Posted within last 90 Days</option>
+              <option value="120days" selected>Posted within last 120 Days</option>
+            </select>
+            </div>
+          </div>  
+          <form name="searchResults" action="index.cfm?fuseaction=resumeSearch.saveSelectedResumes" method="post">
+<input type="hidden" name="CurrFuseAction" value="resumeSearch.search">
+<input type="hidden" name="countOfItems" value="">
+<input type="hidden" name="selectedList" value="">
+
+<style>
+  ul.search-results-list {padding-left: 20px; list-style-type: none;}
+  ul.search-results-list li input[type=checkbox] {
+    position: absolute;
+    left: 15px;
+  }
+            </style>
+		<ul class="search-results-list">
+	      
+	        <li>
+	          <input type="checkbox" value="3162" name="ResumeID" style="float:right">
+	          <a href="#" data-toggle="modal" data-target="#resumeModal">
+	            <p></p><h4 style="margin-bottom: 0px;"><div style="color:#1475a4">Mario Carranza</div></h4>
+	              Mario Carranza
+	              <div style="color:#888">
+	              	18 days ago
+	              	
+	              </div>
+	            <p></p>
+	          </a>
+	          
+	          <hr>
+	        </li>
+	        
+	      
+	        <li>
+	          <input type="checkbox" value="3159" name="ResumeID" style="float:right">
+	          <a href="index.cfm?fuseaction=resumes.viewResumeDetailPopup&amp;ResumeID=3159">
+	            <p></p><h4 style="margin-bottom: 0px;"><div style="color:#1475a4">Grants and Contracts Experience</div></h4>
+	              Jonathan Moreno
+	              <div style="color:#888">
+	              	70 days ago
+	              	
+	              </div>
+	            <p></p>
+	          </a>
+	          
+	          <hr>
+	        </li>
+	        
+	      
+	        <li>
+	          <input type="checkbox" value="3157" name="ResumeID" style="float:right">
+	          <a href="index.cfm?fuseaction=resumes.viewResumeDetailPopup&amp;ResumeID=3157">
+	            <p></p><h4 style="margin-bottom: 0px;"><div style="color:#1475a4">Grants &amp; Contracts Manager</div></h4>
+	              Courtney Miller
+	              <div style="color:#888">
+	              	114 days ago
+	              	
+	              </div>
+	            <p></p>
+	          </a>
+	          
+	          <hr>
+	        </li>
+	        
+	      
+	        <li>
+	          <input type="checkbox" value="3155" name="ResumeID" style="float:right">
+	          <a href="index.cfm?fuseaction=resumes.viewResumeDetailPopup&amp;ResumeID=3155">
+	            <p></p><h4 style="margin-bottom: 0px;"><div style="color:#1475a4">Experienced Research Administrator in an Academic Health Sciences Setting</div></h4>
+	              Rebecca Nickleson
+	              <div style="color:#888">
+	              	120 days ago
+	              </div>
+	            <p></p>
+	          </a>
+	          
+	          <hr>
+	        </li>
+	        
+	      
+	      
+	    </ul>
+
+	    <div >
+			
+			
+				<button class="but_search btn btn-success btn-block" onclick="javascript: return confirmJobIDS(document.searchResults,document.searchResults.JobID);"><i class="fa fa-save"></i> Save Selected Resumes</button>
+			
+			
+		</div>
+	
+
+
+
+</form>
+        </div>
+        <!-- ### END RESUMES ### -->
+       </div>
+        
+        <div class="col-sm-3">
+            <div class="well stack-space text-center" style="background: #ffc; height: 200px"> Placeholder for Ad Space </div>
+            
+            <div class="well stack-space-lg text-center" style="background: azure; height: 200px"> Placeholder for Ad Space </div>
+          </div>
+      </div>
+      </div>
+  </div>
+    </section>
+    
+    
+     <!-- ### LOG IN MODAL ### -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style=" background: #0d2857; /*background-color: #0969d8;
+    border-top: 3px solid #0863cc;
+    border-bottom: 1px solid #0b77ec; */">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white; text-shadow: none; border: 2px solid white; border-radius: 50%;width: 24px; opacity: 1;"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="loginModalLabel" style="   font-family: 'Source Sans Pro', sans-serif; color: white; font-weight: 400;">Career Center Log In</h4>
+      </div>
+      <div class="modal-body" style="background: #0d2857">
+	<!-- ###
+<form action="index.cfm?fuseaction=utils.authenticate" method="post" name="loginFrm" id="loginFrm">
+### -->
+    <form>
+		<input type="Hidden" name="redirect" value="index.cfm?fuseaction=resumeSearch.resetsearch">
+		  <div class="form-group">
+	               	<label for="name" class="control-label" style="color: white;"><strong>Username</strong></label>
+	               	<input name="login" class="form-control" type="text" id="login" value="thomas.p.cleary@gmail.com">
+    </div>
+    <div class="form-group stack-space-lg">
+                   	<label for="name" class="control-label" style="color: white;"><strong>Password</strong></label>
+                   	<input name="password" class="form-control" type="password" id="password" value="testing">
+    </div>
+    <div class="clearfix stack-space">
+				<button class="but_lock btn btn-primary btn-block" data-dismiss="modal" onClick="$('.login-link').hide(); $('.user-login').show();"><i class="fa fa-lock"></i> Login</button>
+				
+				
+    </div>
+    </form>
+        
+        <p><a href="javascript:void(0);" class="login-help-links" style="color: white; text-decoration: underline;" onClick="$('#need-acct').hide(); $('#forgot-login').slideToggle();" >Forgot login info?</a> | <a href="javascript:void(0);" class="login-help-links" style="color: white; text-decoration: underline; float: right;" onClick="$('#forgot-login').hide(); $('#need-acct').slideToggle();">Need an account?</a></p>
+    <style>
+      
+    </style>
+	
+	<div id="need-acct" style="background: #f7f7f7; padding: 15px; margin: 0 -15px -15px; display: none;">
+    <div class="clearfix">
+      <span class="blue-triangle-down-right"></span>
+    </div>  
+	  <ul style="padding-left: 20px;">
+			  <li><strong>Non-Members: </strong>You may create a <a href="https://netforum.avectra.com/eweb/DynamicPage.aspx?Site=sra&amp;WebCode=Verify">non-member account here</a>. After you create an account, you will need to return to the Career Center annd login before being able to access this functionality.
+                          <br>
+                          <br>
+              </li>
+	          <li><strong>Become a Member: </strong>To receive discounted job postings and all the benefits of being an SRA Member, <a href="https://www.srainternational.org/sra03/template/tntbjoin.cfm?id=593">click here to join</a>, or, you may contact someone in our office by calling 703-741-0140 </li>
+	  </ul>
+        </div>
+        
+  <div id="forgot-login" style="background: #f7f7f7; padding: 15px; margin: 0 -15px -15px; display: none;">
+    <div class="clearfix">
+      <span class="blue-triangle-down-left"></span>
+    </div>  
+	  <p>No problem! Enter your e-mail address below. You will be emailed a link to change your password within the next 30 minutes.&nbsp; To ensure delivery, please add <a href="mailto:membership@srainternational.org">membership@srainternational.org</a> to your safe sender list.</p>
+    <div class="form-group">
+      <label class="control-label" for="pri-email">Primary E-mail Address:</label>
+      <input type="email" class="form-control" />
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+      <button class="btn btn-primary btn-block">Submit</button>
+      </div>
+      <div class="col-xs-6">
+      <button class="btn btn-default btn-block">Cancel</button>
+      </div>
+        </div>
+    </div>
+
+
+
+            
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- ### END LOG IN MODAL ### -->
+  
+    <!-- ### RESUME MODAL ### -->
+    <!-- Modal -->
+<div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary" style="background-color: #2e6da4">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white; opacity: 1; border: 2px solid #fff; border-radius: 50%; width: 24px"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="resumeModalLabel">Mario Carranza</h4>
+      </div>
+      <div class="modal-body">
+        <div class="resumeDetail">
+          <div class="clearfix">
+	<h3 class="pull-left stack-space" style="margin-top: 0;">Resume Information</h3>
+            <div class="pull-right stack-space">
+              <button class="btn btn-success"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save</button>
+              <button class="btn btn-default"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
+            </div>
+          </div>
+	
+	
+	<div class="form-group inline">
+		<label class="control-label">Resume Title:</label> Mario Carranza
+	</div>
+	<div class="form-group inline">
+		<label class="control-label">Resume:</label>
+		<br>MARIO CARRANZA, MHA, FACHE  21 BEAVER DAM RD • RANDOLPH, NJ. 07869  marioc2g@msn.com •  mobile (904) 352-6272    <p>
+Career Experience:    </p><p>
+ATLANTIC HEALTH SYSTEM, Morristown, New Jersey – Large non-profit health care system in New Jersey, includes Morristown Medical Center, Overlook Medical Center, Newton Medical Center, Chilton Medical Center, Hackettstown Medical Center, and Goryeb Children’s Hospital. 1,747 licensed beds, 87,000 admissions, over 1.2M outpatient visits, and over 400 active research protocols.     </p><p>
+Director, 2016 – Present: Atlantic Center for Research.    </p><p>
+?	Provide financial and administrative oversight to research activities throughout the organization  ?	Ensure financial viability of research programs at Atlantic Health  ?	Oversee all AHS research administration functions including: pre-award, post-award, IRB, HRPP, research pharmacy, clinical trial administration, biostatistics, research education, and research quality  ?	Developed Clinical Research and Trials Office to facilitate clinical research and ensure high quality support for clinical trials  ?	Initiated an Accelerated Clinical Trials Program to expedite the activation of clinical trials to under 60 days  ?	Developed a 5-year business plan to ensure a sustainable model was implemented for research integration, growth, and operations at Atlantic Health System  ?	Developed a project based translational research program in partnership with Biomedical Research Institute of New Jersey  ?	Spear headed a research review program in partnership with departments to develop stronger research programs and deliverables  ?	Increased research revenue over 35% during 1st year in role  ?	Decreased clinical trial activation time by more than 30% through various initiatives  ?	Founding member in the development of PIER (Partners in Innovation, Education, and Research) – a collaboration with Thomas Jefferson University, Main Line Health, Drexel University, Einstein Health, Geisinger, and Atlantic Health System.  ?	Facilitated the implementation of the Epic research module during the institutional Epic conversion    </p><p>
+MAYO CLINIC, Jacksonville, Florida – Academic medical center that provides diagnosis, medical treatment, surgery and care in more than 40 specialty areas. 304 bed teaching and research hospital.  Operations Administrator, 2014 – 2016: Department of Medical Genetics &amp; Clinical Genomics, Department of Cancer Biology, Cancer &amp; Pathobiology Translational Programs, and Center for Individualized Medicine.    </p><p>
+?	Lead team of over 100+ FTE’s and supervisors, 17 of whom are direct reports.  ?	Partner with over 25 clinical and basic science researchers focused on various cancers, including urology, cardiology, neuroscience, neurosurgery, endocrinology, genetics, epidemiology, gastroenterology, surgery, transplant, pathology and hematology to ensure operational goals of discovery science and translational research are met.  ?	Oversee greater than $80M in research grants and departmental budgets.  ?	Comprehensive Research Management System service line leader for discovery science.  ?	Responsible for the day to day operations of the Discovery &amp; Translational Research, Health Sciences Research, Comparative Medicine, Medical Genetics, Clinical Genomics department and the Center for Individualized Medicine.   ?	Partner with medical geneticists, genetic counselors, and support staff to provide unparalleled care for patients while achieving operational objectives and financial margins for the institution.  ?	Oversee strategic planning, budget, goals, and coordination for the research, practice, and education shields for the Center for Individualized Medicine in Florida.  ?	Working with physician leaders associated with the competitive market plan areas to develop new genetics clinics to drive patient volumes in key high acuity areas such as: Neurogenetics clinic, Advanced Cancers, Hereditary Cancers, and Diagnostic Odyssey  ?	Oversee Mayo Clinic Bioservices in Florida which include: Biorepositories, Medical Genome Facility, and Biobank Collections.  ?	Facilitated the development of a molecular lab in the department of lab medicine and pathology to develop new biomarker tests at Mayo Clinic.    </p><p>
+Operations Manager, 2011 – 2014: Department of Cancer Biology, Department of Health Sciences Research, Griffin Basic Science, and Center for Individualized Medicine (research).    </p><p>
+?	Partnered with over 13 clinical and basic science researchers focused on various cancers, including urology, cardiology, endocrinology, genetics, epidemiology, gastroenterology, surgery, and hematology to ensure operational goals and objectives are met.  ?	Manage all institutional core labs at MCF resulting in a 50% growth in services and over 100% growth in revenue.  ?	Responsible for the department of Health Sciences Research which consists of a clinical studies unit supporting minimal risk and translational research and a unit in biostatistics and informatics.  ?	Lead team of over 70+ FTE’s and supervisors, 31 of whom are direct reports both on campus and in telework arrangements.  ?	Oversee greater than $40M in research grants and departmental budgets.  ?	Lead process improvement projects focusing on study coordination efforts, pre-certification, decompressing the hospital census, international services, and several other lean initiatives.  ?	Worked closely with Mayo research affiliate sites to provide support and to ensure metrics and standards are met.  ?	Beginning in 2011, I facilitated and supported the expansion of the Center for Individualized Medicine to Mayo Clinic Florida which includes implementing genetic testing, EMR rules, clinical service lines, clinical trials, research registries, expansion of core facilities, and developing new business opportunities with external organization.  ?	Supported the expansion of the department of Health Sciences Research (HSR) to Florida to drive success, sustainability and growth.  ?	Served as the capstone preceptor to UNF MHA students.    </p><p>
+Business Analyst, 2008 – 2011: Cancer Research Office, Cancer Center, Hematology/Oncology, Health Disparities, and Research Administration.  ?	Provided business and consultative services to the Cancer Center and various initiatives related to Cancer Research within the Mayo Clinic Enterprise, such as developing a business plan to implement dedicated space for Phase 1 clinical studies.  ?	Developed and restructured financial reporting for the department which has enabled the unit to implement several initiatives to improve costs and improve revenue capture.  ?	Implemented several study review and audit programs that saved and recovered the unit over $200K in the first year.  ?	Developed departmental dashboards that have facilitated strategic planning and restructuring for the department and affiliate sites.    </p><p>
+  UNIVERSITY OF NORTH FLORIDA, Jacksonville, Florida – Brooks College of Health  Adjunct Professor, 2014 – Present: Introduction to Health Administration.  ?	Serving as instructor to BHA students.  ?	Facilitated the Introduction to Healthcare Administration course.  ?	Mentored graduate students in various capacities such as the capstone course and the UAB case competition.  UF HEALTH, Jacksonville, Florida, 2006 – 2008 – 620 bed hospital and academic health center.   Senior Financial Analyst: First Coast Advantage, and Managed Care.  ?	Responsible for timely and accurate reporting of departmental statistics to state and local public health organizations.  ?	Prepared and assisted in developing the initial multi-million dollar budget for a Medicaid managed care product as well as oversight of the annual budgets.  ?	Developed and restructured financial reporting for department.  ?	Conducted financial analysis related to existing and proposed activities, resource allocation, setting and maintaining of performance standards, membership growth, as well as financial analysis relating to operating strategies.   ?	Provided financial expertise to various departments which included: collecting, organizing, developing, summarizing, and presenting financial or operational data related to the organization.  ?	Produced profit and loss statements detailing Business Groups and Payor Mix summaries. Generated standard and ad-hoc reports when needed which included DRG/MS-DRG analysis, Physician volumes and profitability for First Coast Advantage product.  STATE OF FLORIDA, Tallahassee, Florida, 2005-2006   Senior Management Analyst: Department of Revenue, Florida Lottery, and Department of Financial Services.  ?	Supervised the collection and processing of delinquent Lottery business accounts.  ?	Analyzed and reconciled over $1B in retailer accounts, commissions and bonuses for the Florida Lottery.  ?	Prepared and reviewed financial and administrative processes to ensure statutory compliance.  ?	Conducted routine and for cause examinations of registered and unregistered entities to determine statutory compliance.    </p><p>
+BANK OF AMERICA, Tallahassee, Florida, 2003 – 2005   Account Manager  ?	Expanded sales into Hispanic markets through various promotions increasing sales by 200% in one year.  ?	Consistently one of the top producers in the region with a success rate over 95% of target for various products.  ?	Organized various business development promotions in the community such as expansion into new commercial sectors such as retail and grocery stores.  MERRILL LYNCH, Jacksonville, Florida, 2001 – 2002   Bank Control Analyst  ?	Monitored money market trade and money flows throughout the organization for assets over $100M.  ?	Participated in routine and ad hoc audits that resulted in identification of various errors resulting in idle funds of over $500K.  ?	Assisted in development and implementation of a new accounts receivable system for money market funds.  ?	Provided immediate resolution of complex trade inquiries from branches worldwide.    </p><p>
+Education:    </p><p>
+Masters of Health Administration - 2011  UNIVERSITY OF NORTH FLORIDA – Jacksonville, Florida (CAHME Accredited)  ?	President of Upsilon Phi Delta (Healthcare Honor Society), 2010-2011  ?	Healthcare Leadership Institute Award, 2011  ?	UAB Case Competition Participant- “ACO’s, The Wave of the Future?”, 2011(Memorial Hermann Health System, Texas)  ?	Capstone Project– “Decompressing the Hospital Census through the use of Sub-Acute Care”, 2011(Mayo Clinic Florida)  Bachelor of Science, Applied Economics - 2000  FLORIDA STATE UNIVERSITY – Tallahassee, Florida  ?	Minor in Business Administration    </p><p>
+Skills/Certifications:    </p><p>
+Fluent in Spanish, Microsoft Office Suite, Visio, SPSS, Merlin, Medifax, EPSI, FRX, STAR, ATS, CRD, CoreFTP, ACS Data Exchange, Business Objects, Flair,  PowerChart, Stellant, Lawson, MIRIS, and  PowerChart Office.    </p><p>
+  Internal Leadership/Teamwork Activities    </p><p>
+Research Steering Committee, Research Executive Committee, Silver Mayo Quality Fellow (Specialized Quality Designation), Research Core Subcommittee, Biospecimen Subcommittee, Biorepository Trust Oversight Group, CIM Executive Operations &amp; Program Oversight, and Research Resources Subcommittee (Secretary).    </p><p>
+Affiliations    </p><p>
+SRA, ACHE, IHI, NCURA, UPD, NFLHE &amp; AHHE   </p><p>
+	</p></div>
+	
+		<div class="form-group inline">
+			<label class="control-label">Resume File:</label> <a href="index.cfm?fuseaction=resumes.viewResumeFile&amp;ResumeID=3162">Mario Carranza Resume 2018.docx</a>
+		</div>
+	
+
+	<h3>Contact Information</h3>
+	
+	
+		<div class="form-group inline">
+			<label class="control-label">Seeker Name:</label> Mario Carranza
+		</div>
+		<div class="form-group inline">
+			<label class="control-label">Address:</label>
+			
+			21 Beaver Dam Rd <br>Randolph , NJ 07869
+		</div>
+		<div class="form-group inline">
+			<label class="control-label">Email Address:</label>
+			<a href="mailto:marioc2g@msn.com">marioc2g@msn.com</a>
+		</div>
+		<div class="form-group inline">
+			<label class="control-label">Daytime Phone:</label>
+			9043526272
+		</div>
+		<div class="form-group inline">
+			<label class="control-label">Evening Phone:</label>
+			
+		</div>
+	
+	<h3>Background Information</h3>
+	<div class="form-group inline">
+		<label class="control-label">Education:</label>
+		Masters
+	</div>
+	<div class="form-group inline">
+		<label class="control-label">Most Recent Employer:</label>
+		Atlantic Health System
+	</div>
+	<div class="form-group inline">
+		<label class="control-label">Most Recent Job Title:</label>
+		Administrative Director
+	</div>
+	<div class="form-group inline">
+		<label class="control-label">Years of Experience:</label>
+		13
+	</div>
+	<div class="form-group inline">
+		<label class="control-label">Industries:</label>
+		
+	</div>
+	<div class="form-group inline">
+		<label class="control-label">Categories:</label>
+		
+	</div>
+	<div class="form-group inline">
+		<label class="control-label">Work Authorization:</label>
+		Authorized to work in the US
+	</div>
+	<div class="form-group inline">
+		<label class="control-label">Security Clearance:</label>
+		None
+	</div>
+
+	<h3>Position Information</h3>
+	
+	<div class="form-group inline">
+		<label class="control-label">Desired Position:</label>
+		Executive Director
+	</div>
+	<div class="form-group inline">
+		<label class="control-label">Objective:</label>
+		<br>To attain a senior leadership role in a large, changing and challenging healthcare environment where I will utilize my expertise partnering with senior leadership, physicians and scientists and staff to achieve strategic goals. <p>
+	</p></div>
+	<div class="form-group inline">
+		<label class="control-label">Desired Salary:</label>
+		
+	</div>
+	<div class="form-group inline">
+		<label class="control-label">Job Type:</label>
+		
+	</div>
+	<div class="form-group inline">
+		<label class="control-label">Job Status:</label>
+		Administrative Director
+	</div>
+
+			
+
+			
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- ### END RESUME MODAL ### -->
+    
+<footer class="footer">
+  
+    <div class="container">
+    <div class="col-sm-4">
+        <h3>SRA Career Center</h3>
+        <ul class="list">
+        <li><a href="index.cfm?fuseaction=seekers.viewGateway"><i class="fa fa-angle-right"></i> Job Seekers</a></li>
+        <li><a href="index.cfm?fuseaction=employers.viewGateway"><i class="fa fa-angle-right"></i> Employers</a></li>
+        <li><a href="index.cfm?fuseaction=careerCenter.viewFees"><i class="fa fa-angle-right"></i> Pricing</a></li>
+        <li><a href="http://www.srainternational.org/contact"><i class="fa fa-angle-right"></i> Contact</a></li>
+      </ul>
+      </div>
+    <!-- end section -->
+    
+    <div class="col-sm-4">
+        <h3>SRA International</h3>
+        <ul class="list">
+        <li><a href="http://srainternational.org/about-sra-international"><i class="fa fa-angle-right"></i> About SRA International</a></li>
+        <li><a href="http://srainternational.org/learn"><i class="fa fa-angle-right"></i> SRA Learning Institute</a></li>
+        <li><a href="http://srainternational.org/publications"><i class="fa fa-angle-right"></i> SRA Publications</a></li>
+        <li><a href="http://srainternational.org/membership"><i class="fa fa-angle-right"></i> SRA Membership</a></li>
+      </ul>
+      </div>
+    <!-- end section -->
+    
+    <div class="col-sm-4 last">
+        <div class="clearfix">
+        <h3>Contact Us</h3>
+        <p >Society of Research Administrators International<br>
+            1560 Wilson Blvd., Suite 310<br>
+            Arlington, VA 22209</p>
+        <p>+1 703-741-0140<br>
+            FAX +1 703-741-0142</p>
+      </div>
+      </div>
+    <!-- end section --> 
+    
+  </div>
+  </footer>
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+    <!-- ### NEEDED TO UPDATE TO 2.1.3 FOR MULTISELECT ### 
+<script src="js/vendor/jquery/jquery.1.12.4.min.js"></script> 
+  ### -->  
+<script src="js/vendor/jquery/jquery-2.1.3.min.js"></script> 
+<!-- ###
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    ### --> 
+
+<script src="js/bootstrap.min.js"></script> 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="js/ie10-viewport-bug-workaround.js"></script> 
+    
+<!-- ### MULTISELECT FROM http://davidstutz.de/bootstrap-multiselect/index.html#getting-started ### -->
+  <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css">
+    <style>
+      span.multiselect-native-select {display: block;}
+      span.multiselect-native-select .btn-group {width: 100%;}
+      span.multiselect-native-select .btn-group .multiselect.dropdown-toggle.btn.btn-default.btn-block {white-space: inherit; text-align: left;}
+    </style>
+  <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+  <!-- Initialize the plugin: -->
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $('#industries, #categories, #job-types, #education').multiselect({
+            includeSelectAllOption: true,
+            selectAllNumber: false,
+            numberDisplayed: 0
+        });
+      });
+  </script>
+<!-- ### END MULTISELECT AND EK'S CUSTOMIZATIONS ### -->
+    
+<!-- ### LOAD LOGIN MODAL ON PAGE LOAD 
+    <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#loginModal').modal('show');
+    });
+</script>
+### -->
+    
+
+<script>
+  CKEDITOR.replace( 'job-desc' );
+</script>
+
+<!-- ### MATCH HEIGHT from http://codepen.io/micahgodbolt/pen/FgqLc ### --> 
+
+<script>
+equalheight = function(container){
+var currentTallest = 0,
+     currentRowStart = 0,
+     rowDivs = new Array(),
+     $el,
+     topPosition = 0;
+
+ $(container).each(function() {
+   $el = $(this);
+   $($el).height('auto')
+
+   topPostion = $el.position().top;
+
+
+
+   if (currentRowStart != topPostion) {
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+       rowDivs[currentDiv].height(currentTallest);
+     }
+
+     rowDivs.length = 0; // empty the array
+     currentRowStart = topPostion;
+     currentTallest = $el.height();
+     rowDivs.push($el);
+   } else {
+
+     rowDivs.push($el);
+
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+
+  }
+
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+
+     rowDivs[currentDiv].height(currentTallest);
+
+   }
+
+ });
+
+}
+
+
+
+$(window).load(function() {
+
+  equalheight('.inside-full-height');
+
+	equalheight('.inside-qr-height');
+
+});
+
+
+
+
+
+$(window).resize(function(){
+
+  equalheight('.inside-full-height');
+
+	equalheight('.inside-qr-height');
+
+});
+
+</script> 
+
+<!-- ### END MATCH HEIGHT from http://codepen.io/micahgodbolt/pen/FgqLc ### -->
+
+</body>
+</html>
