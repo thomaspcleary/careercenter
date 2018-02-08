@@ -36,9 +36,11 @@
   margin-bottom: -3px;
   font-weight: bold;
 }
-    .link-box {padding-top: 10px;}
-    .link-box:hover {background: #f1f1f1;  box-shadow: 10px 10px 10px rgba(0,0,0,.3); padding-top:5px; -webkit-transition-duration: .2s; /* Safari */
-    transition-duration: .2s; }
+    .link-box {padding-top: 10px; line-height: 1.3}
+    .link-box:hover {background: #fff; box-shadow: 10px 10px 10px rgba(0,0,0,.3); padding-top:5px; -webkit-transition-duration: .2s; /* Safari */
+    transition-duration: .2s;
+    border-radius: 6px;}
+    .link-box .lead {line-height: 1.2;}
 </style>
   </head>
 
@@ -63,9 +65,8 @@
     <div class="container">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#"> <img src="img/sra-logo-only-sm.jpg" width="166" height="20" alt=""/>
-      <h1 style="margin-top: 0; color: #036; font-size: 30px;">Career Center</h1>
-      </a>
+        <a class="navbar-brand" href="#">
+       <img src="img/sra-vector-logo.svg" height="60" style="margin-top: -4px;" alt=""/> </a>
       <!-- ### SIGN IN ### -->
       <div class="dropdown visible-xs" style="float: right; right: 15px;">
         <button class="dropdown-toggle" type="button" id="signinMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width: 60px; display: inline-block">
@@ -94,8 +95,8 @@
           </li>
         <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
             <ul class="dropdown-menu">
-            <li class="active"><a href="#">Overview</a></li>
-            <li><a href="#">Post Jobs</a></li>
+            <li class="active"><a href="employers.html">Welcome</a></li>
+            <li><a href="employers-job-post.html">Post Jobs</a></li>
             <li><a href="#">Resume Search</a></li>
             <li><a href="#">Saved Searches</a></li>
             <li><a href="#">Saved Resumes</a></li>
@@ -126,7 +127,7 @@
   </div>
   </nav>
     </header>
-<section class="no-subnav">
+<section class="no-subnav below-fh">
     
 
 <div class="container">
@@ -134,13 +135,13 @@
     <div class="col-xs-12 stack-space-lg">
     
     <div class="row clearfix">
-        <div class="col-xs-12 stack-space-lg">
+        <div class="col-xs-12 ">
         <h1>Welcome Employers</h1>
       </div>
       <!-- ### 2 ROWS ### -->
-      <div class="col-sm-8 ">
+      <div class="col-md-9 col-sm-8">
         <div class="row">
-      <div class="col-sm-4 col-xs-6 link-box stack-space">
+      <div class="col-sm-4 col-xs-4 link-box stack-space">
         <a href="employers-job-post.html">
         <img src="img/fpo-post.png" width="50%" alt="" style="display:block; margin: 0 auto 10px"/>
 <p class="lead tight text-center">Post Jobs</p>
@@ -148,7 +149,7 @@
         <p class="text-center hidden-xs">Post a new job, edit an existing job listing, or purchase job credits.</p>
       </div>
       
-      <div class="col-sm-4 col-xs-6 link-box stack-space">
+      <div class="col-sm-4 col-xs-4 link-box stack-space">
         <a href="#">
         <img src="img/fpo-resume-search.png" width="50%"  alt="" style="display:block; margin: 0 auto 10px"/>
         <p class="lead tight text-center">Resume Search</p>
@@ -156,7 +157,7 @@
         <p class="text-center  hidden-xs">Search our database of qualified resumes to find the perfect candidate.</p>
       </div>
       
-      <div class="col-sm-4 col-xs-6 link-box stack-space">
+      <div class="col-sm-4 col-xs-4 link-box stack-space">
         <a href="#">
         <img src="img/fpo-saved-search.png" width="50%"  alt="" style="display:block; margin: 0 auto 10px"/>
         <p class="lead tight text-center">Saved Searches</p>
@@ -165,7 +166,7 @@
       </div>
        <!-- ### </div>
       <div class="row"> ### -->
-      <div class="col-sm-4 col-xs-6 link-box stack-space">
+      <div class="col-sm-4 col-xs-4 link-box stack-space">
         <a href="#">
         <img src="img/fpo-saved-resumes.png" width="50%"  alt="" style="display:block; margin: 0 auto 10px"/>
         <p class="lead tight text-center">Saved Resumes</p>
@@ -173,7 +174,7 @@
         <p class="text-center hidden-xs">View resumes saved in previous searches</p>
       </div>
       
-      <div class="col-sm-4 col-xs-6 link-box stack-space">
+      <div class="col-sm-4 col-xs-4 link-box stack-space">
         <a href="#">
         <img src="img/analytics-flaticon.svg" width="50%"  alt="" style="display:block; margin: 0 auto 10px"/>
         <p class="lead tight text-center">Job Reports</p>
@@ -181,7 +182,7 @@
         <p class="text-center hidden-xs">View your job reports</p>
       </div>
       
-      <div class="col-sm-4 col-xs-6 link-box stack-space">
+      <div class="col-sm-4 col-xs-4 link-box stack-space">
         <a href="#">
         <img src="img/account-profile.svg" width="50%" alt="" style="display:block; margin: 0 auto 10px"/>
         <p class="lead tight text-center">Account Profile</p>
@@ -190,10 +191,82 @@
       </div>
         </div>
       </div>
-      <div class="col-sm-4">
-            <div class="well stack-space-lg text-center" style="background: #ffc; height: 200px"> Placeholder for Ad Space </div>
+      <div class="col-md-3 col-sm-4">
+            <div class="modal-content">
+      <div class="modal-header" style=" background: #0d2857; /*background-color: #0969d8;
+    border-top: 3px solid #0863cc;
+    border-bottom: 1px solid #0b77ec; */">
+        
+        <h4 class="modal-title" id="loginModalLabel" style="   font-family: 'Source Sans Pro', sans-serif; color: white; font-weight: 400;">Career Center Employers'
+          <span style="display: inline-block;">Log In</span></h4>
+      </div>
+      <div class="modal-body" style="background: #0d2857">
+	<form action="employers-post-login.html" method="post" name="loginFrm" id="loginFrm">
+		<input type="Hidden" name="redirect" value="index.cfm?fuseaction=resumeSearch.resetsearch">
+		  <div class="form-group">
+	               	<label for="name" class="control-label" style="color: white;"><strong>Username</strong></label>
+	               	<input name="login" class="form-control" type="text" id="login" value="">
+    </div>
+    <div class="form-group stack-space-lg">
+                   	<label for="name" class="control-label" style="color: white;"><strong>Password</strong></label>
+                   	<input name="password" class="form-control" type="password" id="password" value="">
+    </div>
+    <div class="clearfix stack-space">
+				<button class="but_lock btn btn-primary btn-block"><i class="fa fa-lock"></i> Login</button>
+				
+				
+    </div>
+    </form>
+        
+        <div class="row">
+          <div class="col-xs-6">
+            <p><a href="javascript:void(0);" class="login-help-links small" style="color: white; text-decoration: underline;" onclick="$('#need-acct').hide(); $('#forgot-login').slideToggle();">Forgot login info?</a></p>
+          </div>
+          <div class="col-xs-6">
+            <p><a href="javascript:void(0);" class="login-help-links small" style="color: white; text-decoration: underline; float: right;" onclick="$('#forgot-login').hide(); $('#need-acct').slideToggle();">Need an account?</a></p>
+          </div>
+        </div>
+    <style>
+      
+    </style>
+	
+	<div id="need-acct" style="background: #f7f7f7; padding: 15px; margin: 0 -15px -15px; display: none;">
+    <div class="clearfix">
+      <span class="blue-triangle-down-right"></span>
+    </div>  
+	  <ul style="padding-left: 20px;">
+			  <li><strong>Non-Members: </strong>You may create a <a href="https://netforum.avectra.com/eweb/DynamicPage.aspx?Site=sra&amp;WebCode=Verify">non-member account here</a>. After you create an account, you will need to return to the Career Center annd login before being able to access this functionality.
+                          <br>
+                          <br>
+              </li>
+	          <li><strong>Become a Member: </strong>To receive discounted job postings and all the benefits of being an SRA Member, <a href="https://www.srainternational.org/sra03/template/tntbjoin.cfm?id=593">click here to join</a>, or, you may contact someone in our office by calling 703-741-0140 </li>
+	  </ul>
+        </div>
+        
+  <div id="forgot-login" style="background: #f7f7f7; padding: 15px; margin: 0 -15px -15px; display: none;">
+    <div class="clearfix">
+      <span class="blue-triangle-down-left"></span>
+    </div>  
+	  <p>No problem! Enter your e-mail address below. You will be emailed a link to change your password within the next 30 minutes.&nbsp; To ensure delivery, please add <a href="mailto:membership@srainternational.org">membership@srainternational.org</a> to your safe sender list.</p>
+    <div class="form-group">
+      <label class="control-label" for="pri-email">Primary E-mail Address:</label>
+      <input type="email" class="form-control">
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+      <button class="btn btn-primary btn-block">Submit</button>
+      </div>
+      <div class="col-xs-6">
+      <button class="btn btn-default btn-block">Cancel</button>
+      </div>
+        </div>
+    </div>
+
+
+
             
-            <div class="well stack-space-lg text-center" style="background: azure; height: 200px"> Placeholder for Ad Space </div>
+        </div>
+      </div>
           </div>
       
       </div>

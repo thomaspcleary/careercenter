@@ -59,9 +59,8 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#"> <img src="img/sra-logo-only-sm.jpg" width="166" height="20" alt=""/>
-        <h1 style="margin-top: 0; color: #036; font-size: 30px;">Career Center</h1>
-        </a></div>
+        <a class="navbar-brand" href="#">
+       <img src="img/sra-vector-logo.svg" height="60" style="margin-top: -4px;" alt=""/> </a></div>
       <div id="navbar" class="navbar-collapse navbar-right collapse">
         <ul class="nav navbar-nav">
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seekers <span class="caret"></span></a>
@@ -88,15 +87,14 @@
           </li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li style="border-left: 1px solid #333;"><a href="#" class="user-login" style="background: url(img/user-icon.svg) left 12px no-repeat; background-size: 16px 16px; padding-left: 20px; margin-left: 10px; ">
-            Thomas Cleary <span class="caret"></span></a></li>
+          <li style="border-left: 1px solid #333;"><a href="#" class="user-login" style="background: url(img/user-icon.svg) left 12px no-repeat; background-size: 16px 16px; padding-left: 20px; margin-left: 10px; "> Thomas Cleary <span class="caret"></span></a></li>
         </ul>
       </div>
       <!--/.nav-collapse --> 
     </div>
   </nav>
 </header>
-<section class="no-subnav">
+<section class="no-subnav below-fh">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 stack-space-lg">
@@ -107,233 +105,245 @@
         </ol>
         <h1>Payment Form</h1>
         <div id="wizard" class="form_wizard wizard_horizontal col-sm-9">
-      <ul class="wizard_steps anchor">
-                        <li>
-                          <a href="#step-1" class="done" isdone="1" rel="1">
-                            <span class="step_no">1</span>
-                            <span class="step_descr">
-                                              Post a New Job</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#step-2" class="selected" isdone="0" rel="2">
-                            <span class="step_no">2</span>
-                            <span class="step_descr">
-                                              Submit Payment
-                                          </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#step-3" class="disabled" isdone="0" rel="3">
-                            <span class="step_no">3</span>
-                            <span class="step_descr">
-                                              Confirmation
-                                          </span>
-                          </a>
-                        </li>
-                        
-                      </ul>
-      </div>
-        
+          <ul class="wizard_steps anchor">
+            <li> <a href="employers-job-post.html" class="done" isdone="1" rel="1"> <span class="step_no">1</span> <span class="step_descr"> Post a New Job</span> </a> </li>
+            <li> <a href="employers-payment-form.html" class="selected" isdone="0" rel="2"> <span class="step_no">2</span> <span class="step_descr"> Submit Payment </span> </a> </li>
+            <li> <a href="employers-post-confirmation.html" class="disabled" isdone="0" rel="3"> <span class="step_no">3</span> <span class="step_descr"> Confirmation </span> </a> </li>
+          </ul>
+        </div>
         <div class="clearfix">
-          
-          <div class="col-sm-9" style="border: 1px solid #FF9900;">
-            <!-- ### COMMENTED OUT UNTIL NEEDED
+          <div class="col-sm-9" style="border: 1px solid #FF9900; background: white;">
+          <!-- ### COMMENTED OUT UNTIL NEEDED
             <form action="https://careercenter.srainternational.org/fb/index.cfm?fuseaction=jobs.processPayment" method="post" name="0.1_form" target="_blank" onsubmit="try {return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);} catch (e) {return false;}" class="form-horizontal">
               ### -->
-            <form action="employers-post-confirmation.html" class="form-horizontal">
-              <h3 class="stack-space">Payment Options</h3>
-              <div class="form-group clearfix stack-space">
-                <label class="col-sm-4 control-label">Select Payment Method:</label>
-                <div class="col-sm-8 radio-group">
-                  <p class="small" style="background: #0969d8; color: white; padding: 5px; margin-bottom: 0;">Member Pricing</p>
-                  <p style="margin-top: 0px; background:#0d2857; color: white; padding: 10px 5px;">
-                    
-                    $350 per post for 30 Days 
-</p>
-                  <!-- ### <select name="postingPricingID" class="form-control stack-space">
+          <form action="employers-post-confirmation.html" class="form-horizontal">
+            <h3 class="stack-space">Payment Options</h3>
+            <div class="form-group clearfix stack-space">
+              <label class="col-sm-4 control-label"> Cost with Membership Discount:</label>
+              <div class="col-sm-8 radio-group">
+                
+                
+                <div class="clearfix" style="padding-top: 7px;"> 
+                  <p class="tight"><strong>$350</strong> per post for 30 Days </p>
+                  <div class="cell">
+                  <div class="check">
+                      <input id="check-0" type="checkbox" />
+                      Featured Job (+<label for="check-0">$75</label>)
+                    <span class="small" style="margin-left: 20px;" >Exclusive positioning on job listings</span>
+                      <div class="mask"></div>
+                  </div>
+              </div>
+
+              <div class="cell" style="margin-bottom: 10px;">
+                  <div class="check">
+                      <input id="check-1" type="checkbox" />
+                      Job Spotlight (+<label for="check-1">$75</label>)
+                    <span class="small" style="margin-left: 20px;" >Presented in right side on pages like an ad</span>
+                      <div class="mask"></div>
+                  </div>
+              </div>  
+              <div class="promo-code-box" style="background: rgba(255,153,0,.1); padding: 5px 0; border-bottom: 2px solid #f90; margin-bottom: 10px;">
+                  <span class="form-horizontal" style="padding-left: 5px;">
+                  <label class="normal">Have Promo Code?</label>
+                  <input id="promo-code" type="text" style="width: 100px; border-radius: 4px;margin-left: 5px;" placeholder="xxxxxx"/>
+                  </span> 
+                </div>
+                  <div class="pull-left" style="margin-right: 5px;"><strong>TOTAL DUE:</strong> </div> <div id="price" class="pull-left">$350</div>
+                  
+                  
+                </div>
+                
+                
+                <!-- ### <select name="postingPricingID" class="form-control stack-space">
                     <option value="4">1 (30 Day) Posting: $500.00</option>
                     <option value="5">5 (30 Day) Postings : $2,375.00</option>
                     <option value="6">10 (30 Day) Postings : $4,275.00</option>
                   </select> ### -->
-                  <label class="normal" for="payment-method_online">
-                    <input type="radio" name="payment-method" id="payment-method_online" value="0" style="margin-bottom:10px;">
-                     Pay On-line Now </label>
-                  <label class="normal text-left" for="mailInPayment">
-                  <input type="radio" name="payment-method" id="mailInPayment" value="1">
-                   Mail Payment To:
-                  <blockquote style="margin-top: 10px;"> <strong>Attn:</strong> Career Center <br>
-                    Society of Research Administrators International <br>
-                    1560 Wilson Blvd., Suite 310 <br>
-                    Arlington, VA 22209<br>
-                    <br>
-                    <em><strong class="required">NOTE:</strong> Your information will appear on the next page, which you may print out and mail to us along with payment.</em></blockquote>
-                  </label>
+                
+              </div>
+            </div>
+            <hr />
+            <div class="form-group clearfix stack-space">
+              <label class="col-sm-4 control-label">Select Payment Method:</label>
+              <div class="col-sm-8 radio-group">
+                
+               
+                <label class="normal" for="payment-method_online">
+                  <input type="radio" name="payment-method" id="payment-method_online" value="0" style="margin-bottom:10px;">
+                  Pay On-line Now </label>
+                <label class="normal text-left" for="mailInPayment">
+                <input type="radio" name="payment-method" id="mailInPayment" value="1">
+                Mail Payment To:
+                <blockquote style="margin-top: 10px;"> <strong>Attn:</strong> Career Center <br>
+                  Society of Research Administrators International <br>
+                  1560 Wilson Blvd., Suite 310 <br>
+                  Arlington, VA 22209<br>
+                  <br>
+                  <em><strong class="required">NOTE:</strong> Your information will appear on the next page, which you may print out and mail to us along with payment.</em></blockquote>
+                </label>
+              </div>
+            </div>
+            <div class="even-container clearfix">
+              <h3 class="stack-space">Payment Method <span class="normal">(On-line Payment Only)</span></h3>
+              <div class="form-group clearfix stack-space">
+                <label class="col-sm-4 control-label" for="creditCardType">Credit Card: <span class="required">*</span></label>
+                <div class="col-sm-8">
+                  <select id="creditCardType" class="form-control">
+                    <option>Select...</option>
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">Master Card</option>
+                    <option value="AmericanExpress">American Express</option>
+                  </select>
                 </div>
               </div>
-              <div class="even-container" >
-                <h3 class="stack-space">Billing Information</h3>
-                <div class="stack-space clearfix ">
-                  <label class="btn btn-default btn-block" for="imisTempIndicator">
-                    <input type="checkbox" name="imisTempIndicator">
-                    Use membership account information</label>
-                </div>
-                <div class="form-group clearfix stack-space">
-                  <label class="col-sm-4 control-label" for="firstName">First Name: <span class="required">*</span></label>
-                  <div class="col-sm-8">
-                    <input type="text" id="firstName" class="form-control" value="Thomas"  maxlength="50" >
-                  </div>
-                </div>
-                <div class="form-group clearfix stack-space">
-                  <label class="col-sm-4 control-label" for="lastName" >Last Name: <span class="required">*</span></label>
-                  <div class="col-sm-8">
-                    <input type="text" id="lastName" class="form-control" value="Cleary" maxlength="50" >
-                  </div>
-                </div>
-                <div class="form-group clearfix stack-space">
-                  <label class="col-sm-4 control-label" for="addressLine1">Address Line 1: </label>
-                  <div class="col-sm-8">
-                    <input type="text" name="addressLine1" value="8245 Reichard Road" class="form-control" maxlength="255">
-                  </div>
-                </div>
-                <div class="form-group clearfix stack-space">
-                  <label class="col-sm-4 control-label" for="addressLine2">Address Line 2:</label>
-                  <div class="col-sm-8">
-                    <input type="text" id="addressLine2" value="" maxlength="255" class="form-control">
-                  </div>
-                </div>
-                <div class="form-group clearfix stack-space">
-                  <label class="col-sm-4 control-label" for="city">City: </label>
-                  <div class="col-sm-8">
-                    <input type="text" id="city" value="Fairplay" maxlength="50" class="form-control">
-                  </div>
-                </div>
-                <div class="form-group clearfix stack-space">
-                  <label class="col-sm-4 control-label" for="state">State: </label>
-                  <div class="col-sm-8">
-                    <input type="text" id="state" value="MD" maxlength="50" class="form-control">
-                  </div>
-                </div>
-                <div class="form-group clearfix stack-space">
-                  <label class="col-sm-4 control-label" for="zipCode">Zip Code: </label>
-                  <div class="col-sm-8">
-                    <input type="text" id="zipCode" value="21733"  maxlength="10" class="form-control">
-                  </div>
-                </div>
-                <div class="form-group clearfix stack-space">
-                  <label class="col-sm-4 control-label" for="daytimePhone">Daytime Phone: <span class="required">*</span></label>
-                  <div class="col-sm-8">
-                    <input type="text" id="daytimePhone" value="(240) 500-6353" maxlength="15" class="form-control">
-                  </div>
-                </div>
-                <div class="form-group clearfix stack-space">
-                  <label class="col-sm-4 control-label" for="emailAddress">Email: <span class="required">*</span></label>
-                  <div class="col-sm-8">
-                    <input type="email" id="emailAddress" value="thomas.p.cleary@gmail.com"  maxlength="50" class="form-control">
-                    <span class="help-block">
-                    <input type="checkbox" name="sendConfirmationEmail" value="1" checked="">
-                    Send me a confirmation e-mail.</span> </div>
-                </div>
-                <div class="form-group clearfix stack-space-lg">
-                  <label class="col-sm-4 control-label" for="altEmailAddress">Alternate Email:
-                  </label>
-                  <div class="col-sm-8">
-                    <input type="text" id="altEmailAddress" value=""  maxlength="50" class="form-control">
-                    <span class="help-block"><em class="normal">Enter an additional e-mail address
-                    of the person whom you wish to receive the confirmation e-mail and
-                    posting receipt.</em></span> </div>
+              <div class="form-group clearfix stack-space">
+                <label class="col-sm-4 control-label" for="creditCardNumber">Card or Account Number: <span class="required">*</span></label>
+                <div class="col-sm-8">
+                  <input type="text" id="creditCardNumber" value=""  maxlength="50" class="form-control">
                 </div>
               </div>
-              <div>
-                <h3 class="stack-space">Payment Method <span class="normal">(On-line Payment Only)</span></h3>
-                <div class="form-group clearfix stack-space">
-                  <label class="col-sm-4 control-label" for="creditCardType">Credit Card: <span class="required">*</span></label>
-                  <div class="col-sm-8">
-                    <select id="creditCardType" class="form-control">
-                      <option>Select...</option>
-                      <option value="Visa">Visa</option>
-                      <option value="MasterCard">Master Card</option>
-                      <option value="AmericanExpress">American Express</option>
-                    </select>
-                  </div>
+              <div class="form-group clearfix stack-space">
+                <label class="col-sm-4 control-label">Expiration Date: <span class="required">*</span></label>
+                <div class="col-sm-4 col-xs-6">
+                  <select id="creditCardExpirationMonth" class="form-control">
+                    <option>Select...</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                  </select>
                 </div>
-                <div class="form-group clearfix stack-space">
-                  <label class="col-sm-4 control-label" for="creditCardNumber">Card or Account Number: <span class="required">*</span></label>
-                  <div class="col-sm-8">
-                    <input type="text" id="creditCardNumber" value=""  maxlength="50" class="form-control">
-                  </div>
+                <div class="col-sm-4 col-xs-6">
+                  <select name="creditCardExpirationYear" class="form-control">
+                    <option>Select...</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                  </select>
                 </div>
-                <div class="form-group clearfix stack-space-lg">
-                  <label class="col-sm-4 control-label">Expiration Date: <span class="required">*</span></label>
-                  <div class="col-sm-4 col-xs-6">
-                    <select id="creditCardExpirationMonth" class="form-control">
-                      <option>Select...</option>
-                      <option value="1">January</option>
-                      <option value="2">February</option>
-                      <option value="3">March</option>
-                      <option value="4">April</option>
-                      <option value="5">May</option>
-                      <option value="6">June</option>
-                      <option value="7">July</option>
-                      <option value="8">August</option>
-                      <option value="9">September</option>
-                      <option value="10">October</option>
-                      <option value="11">November</option>
-                      <option value="12">December</option>
-                    </select>
-                  </div>
-                  <div class="col-sm-4 col-xs-6">
-                    <select name="creditCardExpirationYear" class="form-control">
-                      <option>Select...</option>
-                      <option value="2018">2018</option>
-                      <option value="2019">2019</option>
-                      <option value="2020">2020</option>
-                      <option value="2021">2021</option>
-                      <option value="2022">2022</option>
-                      <option value="2023">2023</option>
-                      <option value="2024">2024</option>
-                      <option value="2025">2025</option>
-                      <option value="2026">2026</option>
-                      <option value="2027">2027</option>
-                      <option value="2028">2028</option>
-                      <option value="2029">2029</option>
-                      <option value="2030">2030</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="even-container">
-                  <h3 class="stack-space">Comments <span class="small">(Optional)</span></h3>
-                  <div class="stack-space-lg clearfix">
-                    <label class="control-label col-sm-4" for="paymentComments">Please enter any comments or special instructions for your order: </label>
-                    <div class="col-sm-8">
-                    <textarea rows="6" id="paymentComments" class="form-control" placeholder="Enter comments here"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <!-- ### BUTTONS  ### -->
-       <div class=" form-group stack-space-lg clearfix">
-         <div class="col-sm-6">
-         <button type="submit" class="btn-lg btn-primary btn-block">Submit Job <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
-         </div>
-         <div class="col-sm-6"><button type="button" class="btn-lg btn-default btn-block"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save as Draft</button> 
-       </div>
-       
-      </div>
               </div>
-            </form>
-          </div>
-          <div class="col-sm-3">
-            <div class="well stack-space text-center" style="background: #ffc; height: 200px"> Placeholder for Ad Space </div>
+            </div>
+            <div class="clearfix" >
+              <h3 class="stack-space" style="margin-top: 0;">Billing Information</h3>
+              <div class="stack-space clearfix ">
+                <label class="btn btn-default btn-block" for="imisTempIndicator">
+                  <input type="checkbox" name="imisTempIndicator">
+                  Use membership account information</label>
+              </div>
+              <div class="form-group clearfix stack-space">
+                <label class="col-sm-4 control-label" for="firstName">First Name: <span class="required">*</span></label>
+                <div class="col-sm-8">
+                  <input type="text" id="firstName" class="form-control" value="Thomas"  maxlength="50" >
+                </div>
+              </div>
+              <div class="form-group clearfix stack-space">
+                <label class="col-sm-4 control-label" for="lastName" >Last Name: <span class="required">*</span></label>
+                <div class="col-sm-8">
+                  <input type="text" id="lastName" class="form-control" value="Cleary" maxlength="50" >
+                </div>
+              </div>
+              <div class="form-group clearfix stack-space">
+                <label class="col-sm-4 control-label" for="addressLine1">Address Line 1: </label>
+                <div class="col-sm-8">
+                  <input type="text" name="addressLine1" value="8245 Reichard Road" class="form-control" maxlength="255">
+                </div>
+              </div>
+              <div class="form-group clearfix stack-space">
+                <label class="col-sm-4 control-label" for="addressLine2">Address Line 2:</label>
+                <div class="col-sm-8">
+                  <input type="text" id="addressLine2" value="" maxlength="255" class="form-control">
+                </div>
+              </div>
+              <div class="form-group clearfix stack-space">
+                <label class="col-sm-4 control-label" for="city">City: </label>
+                <div class="col-sm-8">
+                  <input type="text" id="city" value="Fairplay" maxlength="50" class="form-control">
+                </div>
+              </div>
+              <div class="form-group clearfix stack-space">
+                <label class="col-sm-4 control-label" for="state">State: </label>
+                <div class="col-sm-8">
+                  <input type="text" id="state" value="MD" maxlength="50" class="form-control">
+                </div>
+              </div>
+              <div class="form-group clearfix stack-space">
+                <label class="col-sm-4 control-label" for="zipCode">Zip Code: </label>
+                <div class="col-sm-8">
+                  <input type="text" id="zipCode" value="21733"  maxlength="10" class="form-control">
+                </div>
+              </div>
+              <div class="form-group clearfix stack-space">
+                <label class="col-sm-4 control-label" for="daytimePhone">Daytime Phone: <span class="required">*</span></label>
+                <div class="col-sm-8">
+                  <input type="text" id="daytimePhone" value="(240) 500-6353" maxlength="15" class="form-control">
+                </div>
+              </div>
+              <div class="form-group clearfix stack-space">
+                <label class="col-sm-4 control-label" for="emailAddress">Email: <span class="required">*</span></label>
+                <div class="col-sm-8">
+                  <input type="email" id="emailAddress" value="thomas.p.cleary@gmail.com"  maxlength="50" class="form-control">
+                  <span class="help-block">
+                  <input type="checkbox" name="sendConfirmationEmail" value="1" checked="">
+                  Send me a confirmation e-mail.</span> </div>
+              </div>
+              <div class="form-group clearfix stack-space-lg">
+                <label class="col-sm-4 control-label" for="altEmailAddress">Alternate Email: </label>
+                <div class="col-sm-8">
+                  <input type="text" id="altEmailAddress" value=""  maxlength="50" class="form-control">
+                  <span class="help-block"><em class="normal">Enter an additional e-mail address
+                  of the person whom you wish to receive the confirmation e-mail and
+                  posting receipt.</em></span> </div>
+              </div>
+            </div>
+            <div class="even-container clearfix">
+              <h3 class="stack-space">Comments <span class="small">(Optional)</span></h3>
+              <div class="stack-space-lg clearfix">
+                <label class="control-label col-sm-4" for="paymentComments">Please enter any comments or special instructions for your order: </label>
+                <div class="col-sm-8">
+                  <textarea rows="6" id="paymentComments" class="form-control" placeholder="Enter comments here"></textarea>
+                </div>
+              </div>
+            </div>
+            <!-- ### BUTTONS  ### -->
+            <div class=" form-group stack-space-lg clearfix">
+              <div class="col-sm-6">
+                <button type="submit" class="btn-lg btn-primary btn-block">Submit Job <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+              </div>
+              <div class="col-sm-6">
+                <button type="button" class="btn-lg btn-default btn-block"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save as Draft</button>
+              </div>
+            </div>
             
-            <div class="well stack-space-lg text-center" style="background: azure; height: 200px"> Placeholder for Ad Space </div>
-          </div>
+          </form>
+        </div>
+        <div class="col-sm-3">
+          <div class="well stack-space text-center" style="background: #ffc; height: 200px"> Placeholder for Ad Space </div>
+          <div class="well stack-space-lg text-center" style="background: azure; height: 200px"> Placeholder for Ad Space </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
 </section>
 <footer class="footer">
-  
   <div class="container">
     <div class="col-sm-4">
       <h3>SRA Career Center</h3>
@@ -385,6 +395,26 @@
 <script>
   CKEDITOR.replace( 'job-desc' );
 </script> 
+  
+  <!-- ### FOR TOTAL DUE PRICE CHANGE http://jsfiddle.net/VWRAd/1/ ### -->
+                <script>
+                 $(".cell").on("click", "input:checkbox", function () {
+    var $items = $(".cell").find("input:checkbox:checked");
+    var $total = $("#price");
+    var cur_total = 350;
+    
+    $items.each(function () {
+        var $this = $(this);
+        var $target = $("label[for='" + $this.attr("id") + "']");
+        var item_value = +($target.html().replace("$", "") || 350);
+        
+        cur_total += item_value;
+    });
+    
+    $total.html("$" + cur_total);
+});
+                </script>
+  
 
 <!-- ### MATCH HEIGHT from http://codepen.io/micahgodbolt/pen/FgqLc ### --> 
 

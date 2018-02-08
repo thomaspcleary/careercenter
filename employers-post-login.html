@@ -37,9 +37,18 @@
 }
 .link-box {
   padding-top: 10px;
+  line-height: 1.3
 }
 .link-box:hover {
-  background: #f1f1f1;
+  background: #fff;
+  box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+  padding-top: 5px;
+  -webkit-transition-duration: .2s; /* Safari */
+  transition-duration: .2s;
+  border-radius: 6px;
+}
+.link-box .lead {
+  line-height: 1.2;
 }
 </style>
 </head>
@@ -65,8 +74,7 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#">
-       <img src="img/sra-vector-logo.svg" height="60" style="margin-top: -4px;" alt=""/> </a> 
+        <a class="navbar-brand" href="#"> <img src="img/sra-vector-logo.svg" height="60" style="margin-top: -4px;" alt=""/> </a> 
         <!-- ### SIGN IN ### -->
         <div class="dropdown visible-xs" style="float: right; right: 15px;">
           <button class="dropdown-toggle" type="button" id="signinMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width: 60px; display: inline-block"> <img src="img/account-profile.svg" alt="Sign In" style="width: 34px; margin-top: 6px"/> <span class="caret" style="position: absolute; bottom: 10px;"></span> </button>
@@ -89,9 +97,9 @@
               <li><a href="#">Account Profile</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
+          <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="employers.html">Overview</a></li>
+              <li class="active"><a href="employers.html">Welcome</a></li>
               <li><a href="employers-job-post.html">Post Jobs</a></li>
               <li><a href="#">Resume Search</a></li>
               <li><a href="#">Saved Searches</a></li>
@@ -100,7 +108,7 @@
               <li><a href="#">Account Profile</a></li>
             </ul>
           </li>
-          <li class="active"><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
           <!-- ###
              <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -116,7 +124,7 @@
             </li>
             ### -->
           <li><a href="contact.html">Contact</a></li>
-          <li style="border-left: 1px solid #333;"><a href="#">Career Center Log In</a></li>
+          <li style="border-left: 1px solid #333;"><a href="#" style="display: none;">Career Center Log In</a> <a href="#" class="user-login" style="background: url(img/user-icon.svg) left 12px no-repeat; background-size: 16px 16px; padding-left: 20px; margin-left: 10px; display: block; "> Thomas Cleary <span class="caret"></span></a></li>
         </ul>
       </div>
       <!--/.nav-collapse --> 
@@ -124,125 +132,104 @@
   </nav>
 </header>
 <section class="no-subnav below-fh">
-  <div class="pricing-bkgnd" style="background: url(img/pexels-photo-838413.jpg) center -100px no-repeat transparent; background-attachment: fixed; height: 700px;">
-    <div class="container">
-      <div class="col-sm-5" style="margin: 50px auto 0;
-    position: relative;
-    text-align: left;
-    color: #036;
-    font-size: 30px;
-    background: rgba(255,255,255,.8) /*rgba(233,235,235,.6)*/;">
-        <h1>It Pays to be a Member <br>
-          of SRA International</h1>
-        <p class="lead" style="color: #333;">
-          Placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <ul class="lead stack-space-lg" style="color: #333;">
-          <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</li>
-          <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</li>
-          <li>Excepteur sint occaecat cupidatat non proident </li>
-         
+<div class="container">
+<div class="row">
+  <div class="col-xs-12 stack-space-lg">
+    <div class="row clearfix">
+      <div class="col-xs-12 ">
+        <h1>Welcome, Thomas Cleary</h1>
+      </div>
+      <div class="col-sm-12"> 
+        
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#jobs-posted" aria-controls="jobs-posted" role="tab" data-toggle="tab"><img src="img/fpo-post.png" width="60px" alt="" style="display:block; margin: 0 auto 10px"/>
+            Posted Jobs
+          </a></li>
+          <li role="presentation"><a href="#saved-resumes" aria-controls="saved-resumes" role="tab" data-toggle="tab"><img src="img/fpo-resume-search.png" width="60px"  alt="" style="display:block; margin: 0 auto 10px"/>
+            <p class="tight text-center">Resumes</p>
+          </a></li>
+          <li role="presentation"><a href="#saved-searches" aria-controls="saved-searches" role="tab" data-toggle="tab"><img src="img/fpo-saved-search.png" width="60px"  alt="" style="display:block; margin: 0 auto 10px"/>
+            <p class="tight text-center">Saved Searches</p>
+            </a></li>
+          <li role="presentation"><a href="#invoices" aria-controls="invoices" role="tab" data-toggle="tab"><img src="img/fpo-saved-resumes.png" width="60px"  alt="" style="display:block; margin: 0 auto 10px"/>
+            <p class="tight text-center">Invoices</p>
+          </a></li>
+          <li role="presentation"><a href="#job-reports" aria-controls="job-reports" role="tab" data-toggle="tab"><img src="img/analytics-flaticon.svg" width="60px"  alt="" style="display:block; margin: 0 auto 10px"/>
+            <p class="tight text-center">Job Reports</p>
+            </a></li>
+          <li role="presentation"><a href="#acct-profile" aria-controls="acct-profile" role="tab" data-toggle="tab"><img src="img/account-profile.svg" width="60px" alt="" style="display:block; margin: 0 auto 10px"/>
+            <p class=" tight text-center">Account Profile</p>
+            </a></li>
+          
         </ul>
         
-        <button class="btn btn-primary btn-block stack-space-lg" style="width: 50%;">Learn More <span class="glyphicon glyphicon-chevron-right"></span></button>
-          </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      
-          <!-- ### 2 ROWS ### -->
-          <div class="col-sm-8" style="margin-top: -100px; margin-bottom: 100px">
-            <div class="stack-space-lg"> 
-              
-              <!-- Nav tabs -->
-              
-              <div class="pricing-tables-helight-two" style="width: 50%">
-                <div class="title">Member Pricing</div>
-                <div class="price">$350 <i>per job post.</i><i><em>Job Posting Duration 30 days</em></i></div>
-                <div class="ordernow" style="background-color: white; border: 1px solid #036;"><a href="index.cfm?fuseaction=jobs.viewPaymentForm" class="colorchan btn-lg btn-primary">Order Now</a></div>
-              </div>
-              <!-- end section -->
-              
-              <div class="pricing-tables-two" style="width: 50%;">
-                <div class="title">Non-Member Pricing</div>
-                <div class="price">$500 <i>per job post.</i><i><em>Job Posting Duration 30 days</em></i></div>
-                <div class="ordernow" style="background-color: white; border: 1px solid #818181; "><a href="index.cfm?fuseaction=jobs.viewPaymentForm" class="normalbut btn-lg btn-primary">Order Now</a></div>
-              </div>
-              <!-- end section --> 
-              
-            </div>
-            
-            
-            
-           
-          </div>
-          <div class="col-sm-4" style="margin-top: -68px;">
-            <div class="well stack-space-lg text-center" style="background: white  /*rgba(255,153,0,.1)*/; border: 2px dashed #aaa; height: 310px; padding: 0;">
-              <div style="
-    width: 100%;
-    height: 65px /*30px*/;
-    padding: 13px 0 10px 0;
-    background-color: rgba(255,153,0,1);
-    text-align: center;
-    font-size: 23px;
-    color: #fff;
-    border-bottom: 3px solid #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
-                          text-shadow: 2px 2px 2px rgba(0,0,0,.5);
-                          margin-bottom: 30px;
-}">Current Promotion
-                
-              </div>
-              <div class="col-xs-12">
-              <strong>Placeholder text.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-            </div>
-            
-          </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="jobs-posted">
+            <div class="job featured-job">
+	          <p style="color:#ff8100; margin-bottom: 0;"><em class="fa fa-star-o"></em> <strong>FEATURED JOB </strong><em class="fa fa-star-o"></em></p>
+	          <h3> <a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13727">Content Project Manager </a></h3>
+	              
+              <p><strong>SRA International</strong> - Arlington, VA
+	              <span class="pull-right">
+                  Posted 17 days ago</span>
+              </p>
+            <!-- <p>SRA International is looking for a part-time project manager for the Education and Professional Development Micro-Accreditation Task Force.</p>
+            <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p> -->
         </div>
-        
-        <!-- ### ONE ROW ### -->
-        <div class="row clearfix hidden">
-          <div class="col-sm-12">
-            <div class="row col-md-6">
-              <div class="col-sm-4 stack-space"> <a href="#"> <img src="img/fpo-post.png" width="50%" height="50%" alt="" style="display:block; margin: 0 auto 10px"/>
-                <p class="lead tight text-center">Post Jobs</p>
-                </a>
-                <p class="text-center">Post a new job, edit an existing job listing, or purchase job credits.</p>
-              </div>
-              <div class="col-sm-4 stack-space"> <a href="#"> <img src="img/fpo-resume-search.png" width="50%" height="50%" alt="" style="display:block; margin: 0 auto 10px"/>
-                <p class="lead tight text-center">Resume Search</p>
-                </a>
-                <p class="text-center">Search our database of qualified resumes to find the perfect candidate.</p>
-              </div>
-              <div class="col-sm-4 stack-space"> <a href="#"> <img src="img/fpo-saved-search.png" width="50%" height="50%" alt="" style="display:block; margin: 0 auto 10px"/>
-                <p class="lead tight text-center">Saved Searches</p>
-                </a>
-                <p class="text-center">Save your resume searches and execute the same searches later.</p>
-              </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="saved-resumes">...</div>
+          <div role="tabpanel" class="tab-pane" id="saved-searches">...</div>
+          <div role="tabpanel" class="tab-pane" id="invoices">...</div>
+          <div role="tabpanel" class="tab-pane" id="job-reports">...</div>
+          <div role="tabpanel" class="tab-pane" id="acct-profile">...</div>
+        </div>
+      </div>
+      
+      
+      <!-- ### ONE ROW ### -->
+      <div class="row clearfix hidden">
+        <div class="col-sm-12">
+          <div class="row col-md-6">
+            <div class="col-sm-4 stack-space"> <a href="#"> <img src="img/fpo-post.png" width="50%" height="50%" alt="" style="display:block; margin: 0 auto 10px"/>
+              <p class="lead tight text-center">Post Jobs</p>
+              </a>
+              <p class="text-center">Post a new job, edit an existing job listing, or purchase job credits.</p>
             </div>
-            <div class="row col-md-6">
-              <div class="col-sm-4 stack-space"> <a href="#"> <img src="img/fpo-saved-resumes.png" width="50%" height="50%" alt="" style="display:block; margin: 0 auto 10px"/>
-                <p class="lead tight text-center">Saved Resumes</p>
-                </a>
-                <p class="text-center">View resumes saved in previous searches</p>
-              </div>
-              <div class="col-sm-4 stack-space"> <a href="#"> <img src="img/analytics-flaticon.svg" width="50%" height="50%" alt="" style="display:block; margin: 0 auto 10px"/>
-                <p class="lead tight text-center">Job Reports</p>
-                </a>
-                <p class="text-center">View your job reports</p>
-              </div>
-              <div class="col-sm-4 stack-space"> <a href="#"> <img src="img/account-profile.svg" width="50%" height="50%" alt="" style="display:block; margin: 0 auto 10px"/>
-                <p class="lead tight text-center">Account Profile</p>
-                </a>
-                <p class="text-center">View and manage your account profile.</p>
-              </div>
+            <div class="col-sm-4 stack-space"> <a href="#"> <img src="img/fpo-resume-search.png" width="50%" height="50%" alt="" style="display:block; margin: 0 auto 10px"/>
+              <p class="lead tight text-center">Resume Search</p>
+              </a>
+              <p class="text-center">Search our database of qualified resumes to find the perfect candidate.</p>
+            </div>
+            <div class="col-sm-4 stack-space"> <a href="#"> <img src="img/fpo-saved-search.png" width="50%" height="50%" alt="" style="display:block; margin: 0 auto 10px"/>
+              <p class="lead tight text-center">Saved Searches</p>
+              </a>
+              <p class="text-center">Save your resume searches and execute the same searches later.</p>
+            </div>
+          </div>
+          <div class="row col-md-6">
+            <div class="col-sm-4 stack-space"> <a href="#"> <img src="img/fpo-saved-resumes.png" width="50%" height="50%" alt="" style="display:block; margin: 0 auto 10px"/>
+              <p class="lead tight text-center">Saved Resumes</p>
+              </a>
+              <p class="text-center">View resumes saved in previous searches</p>
+            </div>
+            <div class="col-sm-4 stack-space"> <a href="#"> <img src="img/analytics-flaticon.svg" width="50%" height="50%" alt="" style="display:block; margin: 0 auto 10px"/>
+              <p class="lead tight text-center">Job Reports</p>
+              </a>
+              <p class="text-center">View your job reports</p>
+            </div>
+            <div class="col-sm-4 stack-space"> <a href="#"> <img src="img/account-profile.svg" width="50%" height="50%" alt="" style="display:block; margin: 0 auto 10px"/>
+              <p class="lead tight text-center">Account Profile</p>
+              </a>
+              <p class="text-center">View and manage your account profile.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 </section>
 <footer class="footer">
   <style>

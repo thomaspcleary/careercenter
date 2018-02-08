@@ -60,14 +60,13 @@
     <div class="container">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#"> <img src="img/sra-logo-only-sm.jpg" width="166" height="20" alt=""/>
-      <h1 style="margin-top: 0; color: #036; font-size: 30px;">Career Center</h1>
-      </a></div>
+        <a class="navbar-brand" href="#">
+       <img src="img/sra-vector-logo.svg" height="60" style="margin-top: -4px;" alt=""/> </a></div>
     <div id="navbar" class="navbar-collapse navbar-right collapse">
         <ul class="nav navbar-nav">
         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seekers <span class="caret"></span></a>
             <ul class="dropdown-menu">
-            <li><a href="#">Overview</a></li>
+            <li><a href="index.html">Overview</a></li>
             <li><a href="#">Job Search</a></li>
             <li><a href="#">Manage Resume</a></li>
             <li><a href="#">Saved Searches</a></li>
@@ -113,7 +112,7 @@
   </div>
   </nav>
     </header>
-<section class="no-subnav">
+<section class="no-subnav below-fh">
     
 
 <div class="container">
@@ -127,14 +126,14 @@
       <div id="wizard" class="form_wizard wizard_horizontal col-sm-9">
       <ul class="wizard_steps anchor">
                         <li>
-                          <a href="#step-1" class="selected" isdone="1" rel="1">
+                          <a href="#employers-job-post.html" class="selected" isdone="1" rel="1">
                             <span class="step_no">1</span>
                             <span class="step_descr">
                                               Post a New Job</span>
                           </a>
                         </li>
                         <li>
-                          <a href="#step-2" class="disabled" isdone="0" rel="2">
+                          <a href="employers-payment-form.html" class="disabled" isdone="0" rel="2">
                             <span class="step_no">2</span>
                             <span class="step_descr">
                                               Submit Payment
@@ -142,7 +141,7 @@
                           </a>
                         </li>
                         <li>
-                          <a href="#step-3" class="disabled" isdone="0" rel="3">
+                          <a href="#employers-post-confirmation.html" class="disabled" isdone="0" rel="3">
                             <span class="step_no">3</span>
                             <span class="step_descr">
                                               Confirmation
@@ -155,7 +154,7 @@
       
    
       <div class="clearfix">
-      <div class="col-sm-9" style="border: 1px solid #FF9900;">
+      <div class="col-sm-9" style="border: 1px solid #FF9900; background: white;">
      <form action="employers-payment-form.html">
        
        <h3 class="stack-space">Avectra ID</h3>
@@ -252,12 +251,27 @@
           <input type="text" class="form-control" id="job-title" />
          </div>
         </div>
-       <div class="form-group form-horizontal stack-space-lg clearfix">
+       <div class="form-group form-horizontal stack-space clearfix">
          <label class="col-sm-4 control-label" for="job-desc">Job Description: <span class="required">*</span></label>
            <div class="col-sm-8">
           <textarea type="text" class="form-control" id="job-desc">Enter Job Description Here</textarea>
          </div>
-        </div>
+       </div>
+       <div class="form-group form-horizontal stack-space clearfix">
+         <label class="col-sm-4 control-label" for="job-desc">Choose Enhanced Job Posting Options:</label>
+           <div class="col-sm-8 radio-group">
+         
+            <label for="featured" class="control-label normal">
+            <input type="checkbox" id="featured" />
+              Featured Job (+$75)<br /> <span class="small" style="margin-left: 20px;">Exclusive positioning on job listings</span></label>
+            <label for="spotlight" class="control-label normal">
+            <input type="checkbox" id="spotlight" />
+            Job Spotlight (+$75)<br />
+              <span class="small" style="margin-left: 20px;">Presented in right side on pages like an ad</span> </label>
+         </div>
+       </div>
+         
+        
        <!-- ### END JOB INFO ### -->
         
        <!-- ### BACKGROUND INFO ### -->
@@ -598,10 +612,10 @@
        </div>
        </div>
        
-       <!-- ### ADMIN OPTIONS ### -->
+       <!-- ### ADMIN OPTIONS ###
       <div class="even-container">
        <h3 class="stack-space">Admin Options</h3>
-        <div class="form-group form-horizontal stack-space-lg clearfix">
+<div class="form-group form-horizontal stack-space-lg clearfix">
           <label class="col-sm-4 control-label" for="salary">Job Status:</label>
           <div class="col-sm-8 radio-group">
             <label class="control-label normal" for="draft"><input type="radio" name="job-status" id="draft" /> Draft Version</label>
@@ -617,15 +631,16 @@
             Job Spotlight</label>
           </div>
         </div>
+       
         <div class="form-group form-horizontal clearfix">
           <label class="col-sm-4 control-label" for="start-post-date">Start job posting on:</label>
           <div class="col-sm-8">
             <input type="date" id="start-post-date" class="form-control" />
           </div>
-        </div>
+        </div> 
        </div>
-         
-     
+         ### -->
+     <hr />
        <!-- ### BUTTONS  ### -->
        <div class="form-group stack-space-lg clearfix">
          <div class="col-sm-6 form-group">
