@@ -107,7 +107,7 @@ label span.normal, .normal {font-weight: 400;}
 @media (max-width: 767px) {
   #filter-options {margin-top: 0;}
 }
-.nav-tabs {
+/*.nav-tabs {
     border-bottom: 1px solid #0d2857;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
@@ -117,7 +117,7 @@ label span.normal, .normal {font-weight: 400;}
     border: 1px solid #0d2857;
   border-bottom: 2px solid white;
 }
-
+*/
 
 
 .normal, label.normal {font-weight: 400;}
@@ -200,8 +200,12 @@ border-top: 10px solid #0d2857;
 }
 
 /* EMPLOYER POST LOGIN */
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: #fffff9;
+}
 .nav.nav-tabs li a p {margin-bottom: 0 !important;}
-.tab-content {background: white; padding: 15px; border: 1px solid #ccc;}
+.tab-content {background: white; padding: 15px; border: 1px solid #ddd; border-top: 0; min-height: 400px;}
 
 
 /* CONTACT */

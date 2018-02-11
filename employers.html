@@ -36,10 +36,19 @@
   margin-bottom: -3px;
   font-weight: bold;
 }
-    .link-box {padding-top: 10px; line-height: 1.3}
-    .link-box:hover {background: #fff; box-shadow: 10px 10px 10px rgba(0,0,0,.3); padding-top:5px; -webkit-transition-duration: .2s; /* Safari */
+    /*.link-box {padding-top: 10px; line-height: 1.3} */
+    /* .link-box:hover {background: #fff; box-shadow: 10px 10px 10px rgba(0,0,0,.3); padding-top:5px; -webkit-transition-duration: .2s; 
     transition-duration: .2s;
-    border-radius: 6px;}
+    border-radius: 6px;} */
+    /*.link-box {background: #fff; /*box-shadow: 5px 5px 5px rgba(0,0,0,.3); padding-top:10px; -webkit-transition-duration: .2s; 
+    transition-duration: .2s;
+    border-radius: 6px;
+    border:1px solid #aaa;}*/
+    .link-box:hover {background: #fffff9; box-shadow: 3px 3px 5px rgba(0,0,0,.3); padding-top:5px; padding-bottom: 10px; -webkit-transition-duration: .2s; /* Safari */
+    transition-duration: .2s;
+    border-radius: 6px;
+    /*border:1px solid #253D68;*/
+    z-index: 5}
     .link-box .lead {line-height: 1.2;}
 </style>
   </head>
@@ -84,7 +93,7 @@
         <ul class="nav navbar-nav">
         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seekers <span class="caret"></span></a>
             <ul class="dropdown-menu">
-            <li><a href="#">Overview</a></li>
+            <li><a href="index.html">Overview</a></li>
             <li><a href="#">Job Search</a></li>
             <li><a href="#">Manage Resume</a></li>
             <li><a href="#">Saved Searches</a></li>
@@ -128,20 +137,36 @@
   </nav>
     </header>
 <section class="no-subnav below-fh">
-    
+  <div class="billboard-emp stack-space-lg" style="background: url(img/FPO-img-employers.jpg) center top no-repeat transparent; background-size: 100%; min-height: 450px">
+    <div class="container">
+      <div class="col-sm-5" style="margin: 50px auto 0;
+    position: relative;
+    text-align: left;
+    color: #036;
+    font-size: 30px;
+    background: rgba(255,255,255,.8) /*rgba(233,235,235,.6)*/;">
+        <h1>Looking for the right people for your company?</h1>
+        <p class="lead" style="color: #333;">
+          This is where you will find them!</p>
+       
+        
+        
+          </div>
+    </div>
+  </div>
 
 <div class="container">
 <div class="row">
     <div class="col-xs-12 stack-space-lg">
     
     <div class="row clearfix">
-        <div class="col-xs-12 ">
+        <div class="col-xs-12 hidden">
         <h1>Welcome Employers</h1>
       </div>
       <!-- ### 2 ROWS ### -->
-      <div class="col-md-9 col-sm-8">
+      <div class="col-xs-12">
         <div class="row">
-      <div class="col-sm-4 col-xs-4 link-box stack-space">
+      <div class="col-md-2 col-sm-4 col-xs-4 link-box stack-space">
         <a href="employers-job-post.html">
         <img src="img/fpo-post.png" width="50%" alt="" style="display:block; margin: 0 auto 10px"/>
 <p class="lead tight text-center">Post Jobs</p>
@@ -149,7 +174,7 @@
         <p class="text-center hidden-xs">Post a new job, edit an existing job listing, or purchase job credits.</p>
       </div>
       
-      <div class="col-sm-4 col-xs-4 link-box stack-space">
+      <div class="col-md-2 col-sm-4 col-xs-4 link-box stack-space">
         <a href="#">
         <img src="img/fpo-resume-search.png" width="50%"  alt="" style="display:block; margin: 0 auto 10px"/>
         <p class="lead tight text-center">Resume Search</p>
@@ -157,7 +182,7 @@
         <p class="text-center  hidden-xs">Search our database of qualified resumes to find the perfect candidate.</p>
       </div>
       
-      <div class="col-sm-4 col-xs-4 link-box stack-space">
+      <div class="col-md-2 col-sm-4 col-xs-4 link-box stack-space">
         <a href="#">
         <img src="img/fpo-saved-search.png" width="50%"  alt="" style="display:block; margin: 0 auto 10px"/>
         <p class="lead tight text-center">Saved Searches</p>
@@ -166,15 +191,15 @@
       </div>
        <!-- ### </div>
       <div class="row"> ### -->
-      <div class="col-sm-4 col-xs-4 link-box stack-space">
+      <div class="col-md-2 col-sm-4 col-xs-4 link-box stack-space">
         <a href="#">
         <img src="img/fpo-saved-resumes.png" width="50%"  alt="" style="display:block; margin: 0 auto 10px"/>
-        <p class="lead tight text-center">Saved Resumes</p>
+        <p class="lead tight text-center">Invoices</p>
         </a>
-        <p class="text-center hidden-xs">View resumes saved in previous searches</p>
+        <p class="text-center hidden-xs">Keep track of when you've paid for each job posted.</p>
       </div>
       
-      <div class="col-sm-4 col-xs-4 link-box stack-space">
+      <div class="col-md-2 col-sm-4 col-xs-4 link-box stack-space">
         <a href="#">
         <img src="img/analytics-flaticon.svg" width="50%"  alt="" style="display:block; margin: 0 auto 10px"/>
         <p class="lead tight text-center">Job Reports</p>
@@ -182,7 +207,7 @@
         <p class="text-center hidden-xs">View your job reports</p>
       </div>
       
-      <div class="col-sm-4 col-xs-4 link-box stack-space">
+      <div class="col-md-2 col-sm-4 col-xs-4 link-box stack-space">
         <a href="#">
         <img src="img/account-profile.svg" width="50%" alt="" style="display:block; margin: 0 auto 10px"/>
         <p class="lead tight text-center">Account Profile</p>
@@ -191,83 +216,7 @@
       </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4">
-            <div class="modal-content">
-      <div class="modal-header" style=" background: #0d2857; /*background-color: #0969d8;
-    border-top: 3px solid #0863cc;
-    border-bottom: 1px solid #0b77ec; */">
-        
-        <h4 class="modal-title" id="loginModalLabel" style="   font-family: 'Source Sans Pro', sans-serif; color: white; font-weight: 400;">Career Center Employers'
-          <span style="display: inline-block;">Log In</span></h4>
-      </div>
-      <div class="modal-body" style="background: #0d2857">
-	<form action="employers-post-login.html" method="post" name="loginFrm" id="loginFrm">
-		<input type="Hidden" name="redirect" value="index.cfm?fuseaction=resumeSearch.resetsearch">
-		  <div class="form-group">
-	               	<label for="name" class="control-label" style="color: white;"><strong>Username</strong></label>
-	               	<input name="login" class="form-control" type="text" id="login" value="">
-    </div>
-    <div class="form-group stack-space-lg">
-                   	<label for="name" class="control-label" style="color: white;"><strong>Password</strong></label>
-                   	<input name="password" class="form-control" type="password" id="password" value="">
-    </div>
-    <div class="clearfix stack-space">
-				<button class="but_lock btn btn-primary btn-block"><i class="fa fa-lock"></i> Login</button>
-				
-				
-    </div>
-    </form>
-        
-        <div class="row">
-          <div class="col-xs-6">
-            <p><a href="javascript:void(0);" class="login-help-links small" style="color: white; text-decoration: underline;" onclick="$('#need-acct').hide(); $('#forgot-login').slideToggle();">Forgot login info?</a></p>
-          </div>
-          <div class="col-xs-6">
-            <p><a href="javascript:void(0);" class="login-help-links small" style="color: white; text-decoration: underline; float: right;" onclick="$('#forgot-login').hide(); $('#need-acct').slideToggle();">Need an account?</a></p>
-          </div>
-        </div>
-    <style>
       
-    </style>
-	
-	<div id="need-acct" style="background: #f7f7f7; padding: 15px; margin: 0 -15px -15px; display: none;">
-    <div class="clearfix">
-      <span class="blue-triangle-down-right"></span>
-    </div>  
-	  <ul style="padding-left: 20px;">
-			  <li><strong>Non-Members: </strong>You may create a <a href="https://netforum.avectra.com/eweb/DynamicPage.aspx?Site=sra&amp;WebCode=Verify">non-member account here</a>. After you create an account, you will need to return to the Career Center annd login before being able to access this functionality.
-                          <br>
-                          <br>
-              </li>
-	          <li><strong>Become a Member: </strong>To receive discounted job postings and all the benefits of being an SRA Member, <a href="https://www.srainternational.org/sra03/template/tntbjoin.cfm?id=593">click here to join</a>, or, you may contact someone in our office by calling 703-741-0140 </li>
-	  </ul>
-        </div>
-        
-  <div id="forgot-login" style="background: #f7f7f7; padding: 15px; margin: 0 -15px -15px; display: none;">
-    <div class="clearfix">
-      <span class="blue-triangle-down-left"></span>
-    </div>  
-	  <p>No problem! Enter your e-mail address below. You will be emailed a link to change your password within the next 30 minutes.&nbsp; To ensure delivery, please add <a href="mailto:membership@srainternational.org">membership@srainternational.org</a> to your safe sender list.</p>
-    <div class="form-group">
-      <label class="control-label" for="pri-email">Primary E-mail Address:</label>
-      <input type="email" class="form-control">
-    </div>
-    <div class="row">
-      <div class="col-xs-6">
-      <button class="btn btn-primary btn-block">Submit</button>
-      </div>
-      <div class="col-xs-6">
-      <button class="btn btn-default btn-block">Cancel</button>
-      </div>
-        </div>
-    </div>
-
-
-
-            
-        </div>
-      </div>
-          </div>
       
       </div>
       
