@@ -104,7 +104,7 @@
           <li>Payment Form</li>
         </ol>
         <h1>Payment Form</h1>
-        <div id="wizard" class="form_wizard wizard_horizontal col-sm-9">
+        <div id="wizard" class="form_wizard wizard_horizontal col-sm-12">
           <ul class="wizard_steps anchor">
             <li> <a href="employers-job-post.html" class="done" isdone="1" rel="1"> <span class="step_no">1</span> <span class="step_descr"> Post a New Job</span> </a> </li>
             <li> <a href="employers-payment-form.html" class="selected" isdone="0" rel="2"> <span class="step_no">2</span> <span class="step_descr"> Submit Payment </span> </a> </li>
@@ -112,7 +112,7 @@
           </ul>
         </div>
         <div class="clearfix">
-          <div class="col-sm-9" style="border: 1px solid #FF9900; background: white;">
+          <div class="col-sm-12" style="border: 1px solid #FF9900; background: white;">
           <!-- ### COMMENTED OUT UNTIL NEEDED
             <form action="https://careercenter.srainternational.org/fb/index.cfm?fuseaction=jobs.processPayment" method="post" name="0.1_form" target="_blank" onsubmit="try {return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);} catch (e) {return false;}" class="form-horizontal">
               ### -->
@@ -179,7 +179,12 @@
                   1560 Wilson Blvd., Suite 310 <br>
                   Arlington, VA 22209<br>
                   <br>
-                  <em><strong class="required">NOTE:</strong> Your information will appear on the next page, which you may print out and mail to us along with payment.</em></blockquote>
+                  <em><strong class="required">NOTES:</strong>
+                    <ul>
+                      <li>Your information will appear on the next page, which you may print out and mail to us along with payment.</li>
+                      <li>Job will not be posted until payment is received</li>
+                    </ul>
+                  </em></blockquote>
                 </label>
               </div>
             </div>
@@ -334,10 +339,7 @@
             
           </form>
         </div>
-        <div class="col-sm-3">
-          <div class="well stack-space text-center" style="background: #ffc; height: 200px"> Placeholder for Ad Space </div>
-          <div class="well stack-space-lg text-center" style="background: azure; height: 200px"> Placeholder for Ad Space </div>
-        </div>
+        
       </div>
     </div>
   </div>
