@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+  <title>SRA International Career Center</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap theme -->
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <style>
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: #036;
+  background-color: #fff;
+  background-image: none !important;
+  border-bottom: 3px solid #253D68;
+  margin-bottom: -3px;
+  font-weight: bold;
+}
+</style>
+  </head>
+
+  <body>
+
+<!-- Fixed navbar -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="top_section clearfix hidden" style="background: #f7f7f7; ">
+    <div class="container">
+        <ul style="list-style: none;">
+        <li style="display: inline-block"><a href="https://www.facebook.com/SocResAdminINTL"><i class="fa fa-facebook"></i></a></li>
+        <li style="display: inline-block"><a href="https://twitter.com/SocietyRAIntl"><i class="fa fa-twitter"></i></a></li>
+        <li style="display: inline-block"><a href="http://www.linkedin.com/groups?gid=1959806&amp;mostPopular="><i class="fa fa-linkedin"></i></a></li>
+        <li style="display: inline-block; color: #ccc;">|</li>
+        <li style="display: inline-block"><a href="http://www.srainternational.org">www.srainternational.org</a></li>
+        <li style="display: inline-block; color: #ccc;">|</li>
+        <li style="display: inline-block"><a href="index.cfm?fuseaction=careerCenter.viewLogin">Career Center Login</a></li>
+      </ul>
+      </div>
+  </div>
+    <div class="container"> 
+    <!--    <img src="img/sra-logo-only-sm.jpg"  height="20" alt=""/> -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"> <img src="img/sra-vector-logo.svg" height="60" style="margin-top: -4px;" alt=""/> </a></div>
+    <div id="navbar" class="navbar-collapse navbar-right collapse">
+        <ul class="nav navbar-nav">
+        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seekers <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li class="active"><a href="#">Job Search</a></li>
+            <li><a href="#">Manage Resume</a></li>
+            <li><a href="#">Saved Searches</a></li>
+            <li><a href="#">Saved Jobs</a></li>
+            <li><a href="#">Job Applications</a></li>
+            <li><a href="#">Account Profile</a></li>
+          </ul>
+          </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="employers.html">Welcome</a></li>
+            <li><a href="employers-job-post.html">Post Jobs</a></li>
+            <li><a href="#">Resume Search</a></li>
+            <li><a href="#">Saved Searches</a></li>
+            <li><a href="#">Saved Resumes</a></li>
+            <li><a href="#">Job Posting Reports</a></li>
+            <li><a href="#">Account Profile</a></li>
+          </ul>
+          </li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <!-- ###
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            ### -->
+        <li><a href="contact.html">Contact</a></li>
+        <li style="border-left: 1px solid #333;"> <a href="#" style="display: none;">Career Center Log In</a> <a href="#" class="user-login" style="background: url(img/user-icon.svg) left 12px no-repeat; background-size: 16px 16px; padding-left: 20px; margin-left: 10px; display: block; "> Evan Katz <span class="caret"></span></a></li>
+      </ul>
+      </div>
+    <!--/.nav-collapse --> 
+  </div>
+  </nav>
+
+<!-- /container -->
+<section class="below-fh">
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 stack-space-lg job-list">
+         <h1 class="stack-space-lg">Welcome, Evan Katz</h1>
+          
+          <div class="row clearfix">
+            <div class="col-sm-12"> 
+        
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active" style="width:16.66666667%; text-align: center"><a href="#jobs-posted" aria-controls="jobs-posted" role="tab" data-toggle="tab"><img src="img/fpo-post.png" width="60px" alt="" style="display:block; margin: 0 auto 10px"/>
+            Job Search
+          </a></li>
+          <li role="presentation" style="width:16.66666667%; text-align: center"><a href="#saved-resumes" aria-controls="saved-resumes" role="tab" data-toggle="tab"><img src="img/fpo-resume-search.png" width="60px"  alt="" style="display:block; margin: 0 auto 10px"/>
+            <p class="tight text-center">Manage Resumes</p>
+          </a></li>
+          <li role="presentation" style="width:16.66666667%; text-align: center"><a href="#saved-searches" aria-controls="saved-searches" role="tab" data-toggle="tab"><img src="img/fpo-saved-search.png" width="60px"  alt="" style="display:block; margin: 0 auto 10px"/>
+            <p class="tight text-center">Saved Jobs</p>
+            </a></li>
+          <!-- ###
+          <li role="presentation" style="width:16.66666667%; text-align: center"><a href="#invoices" aria-controls="invoices" role="tab" data-toggle="tab"><img src="img/fpo-saved-resumes.png" width="60px"  alt="" style="display:block; margin: 0 auto 10px"/>
+            <p class="tight text-center">Job Applications</p>
+          </a></li>
+          ### -->
+          
+          <li role="presentation" style="width:16.66666667%; text-align: center"><a href="#acct-profile" aria-controls="acct-profile" role="tab" data-toggle="tab"><img src="img/account-profile.svg" width="60px" alt="" style="display:block; margin: 0 auto 10px"/>
+            <p class=" tight text-center">Account Profile</p>
+            </a></li>
+          
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="jobs-posted">
+            
+            <div class="row clearfix">
+         
+            <div class="col-sm-6 col-sm-push-6" style="padding-top: 20px;">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search by keyword">
+                <span class="input-group-btn"> <a href="index-filtered.html" class="btn btn-default" type="button">GO</a> </span> </div>
+            <!-- /input-group --> 
+            <a href="javascript:void(0);" role="button" class="adv" onClick="$('#filter-options').slideToggle(); $(this).toggleClass('open')">Advanced Search</a> 
+            
+            
+            
+          </div>
+            <!-- /.col-lg-6 -->
+            
+            <div class="col-sm-6 col-sm-pull-6 col-xs-12">
+            <h2 style="margin-bottom: 0">Current Opportunities </h2>
+            
+              <p class="lead pull-left" style="font-weight: 400;"><strong>30</strong> jobs
+                from last <a href="javascript:void(0);">90 days<span class="caret"></span></a></p>
+          </div>
+            
+            <!-- ### FILTER OPTIONS ### -->
+            <div id="filter-options" class="clearfix" style="display: none; margin: 0 0 20px; /* position: absolute; z-index: 100; */ box-shadow: 2px 2px 10px rgba(0,0,0,.25); ">
+            <button class="close" onClick="$('#filter-options').slideToggle();"><span class="glyphicon glyphicon-remove-sign" style="color: #000 !important;" ></span></button>
+            <!--###
+           <ul style="padding-left: 0; list-style-type: none; float: left; margin-right: 15px;">
+             <li><strong>Industries</strong>
+               <ul style="padding-left: 10px; list-style-type: none; margin-top: 5px;">
+                 <li><label for="all-indy" class="normal"><input type="checkbox" id="all-indy" /> SELECT ALL</label></li>
+                 <li><label for="college" class="normal"><input type="checkbox" id="college" /> College/University</label></li>
+                 <li><label for="hospital" class="normal"><input type="checkbox" id="hospital" /> Hospital</label></li>
+                 <li><label for="non-profit" class="normal"><input type="checkbox" id="non-profit" /> Non-Profit</label></li>
+                 <li><label for="commercial" class="normal"><input type="checkbox" id="commercial" /> Commercial</label></li>
+                 <li><label for="govt" class="normal"><input type="checkbox" id="govt" /> Government</label></li>
+                 <li><label for="legal" class="normal"><input type="checkbox" id="legal" /> Legal</label></li>
+                 <li><label for="other" class="normal"><input type="checkbox" id="other"/> Other</label></li>
+
+               </ul>
+              </li>
+            </ul>
+            <ul style="padding-left: 0; list-style-type: none; float: left; margin-right: 15px;">
+             <li><strong>Categories</strong>
+               <ul style="padding-left: 10px; list-style-type: none; margin-top: 5px;">
+                 <li><label for="all-cat" class="normal"><input type="checkbox" id="all-cat" /> Administrator or Administrative</label></li>
+                 <li><label for="admin" class="normal"><input type="checkbox" id="admin" /> Administrator or Administrative</label></li>
+                 <li><label for="business-manager" class="normal"><input type="checkbox" id="business-manager" /> Business Manager</label></li>
+                 <li><label for="compliance" class="normal"><input type="checkbox" id="compliance" /> Compliance</label></li>
+                 <li><label for="dept-admin" class="normal"><input type="checkbox" id="dept-admin" /> Department Administrator</label></li>
+                 <li><label for="fn-ops" class="normal"><input type="checkbox" id="fn-ops" /> Finance, Operations</label></li>
+                 <li><label for="government" class="normal"><input type="checkbox" id="government" /> Government</label></li>
+                 <li><label for="grants" class="normal"><input type="checkbox" id="grants"/> Grants and Contracts</label></li>
+                 <li><label for="irb" class="normal"><input type="checkbox" id="irb"/> Institutional Review Board</label></li>
+                 <li><label for="other-categ" class="normal"><input type="checkbox" id="other-categ"/> Other</label></li>
+                 <li><label for="president" class="normal"><input type="checkbox" id="president"/> President, CEO, Executive Director</label></li>
+                 <li><label for="ra-mgr" class="normal"><input type="checkbox" id="ra-mgr"/> Research Administrator/Manager</label></li>
+                 <li><label for="spon-proj" class="normal"><input type="checkbox" id="spon-proj"/> Sponsored Projects/Programs</label></li>
+
+               </ul>
+              </li>
+            </ul>
+            <ul style="padding-left: 0; list-style-type: none; float: left; margin-right: 15px;">
+             <li><strong>Job Types</strong>
+               <ul style="padding-left: 10px; list-style-type: none; margin-top: 5px;">
+                 <li><label for="ft" class="normal"><input type="checkbox" id="ft" /> Full Time</label></li>
+                 <li><label for="pt" class="normal"><input type="checkbox" id="pt" /> Part Time</label></li>
+                 <li><label for="contract" class="normal"><input type="checkbox" id="contract" /> Contract</label></li>
+                 <li><label for="temp-perm" class="normal"><input type="checkbox" id="temp-perm" /> Temp to Perm</label></li>
+                 <li><label for="internship" class="normal"><input type="checkbox" id="internship" /> Internship</label></li>
+               </ul>
+              </li>
+            </ul>
+             <ul style="padding-left: 0; list-style-type: none; float: left; margin-right: 15px;">
+             <li><strong>Education</strong>
+               <ul style="padding-left: 10px; list-style-type: none; margin-top: 5px;">
+                 <li><label for="edu-all" class="normal"><input type="checkbox" id="edu-all" /> Select All</label></li>
+                 <li><label for="hs" class="normal"><input type="checkbox" id="hs" /> High School</label></li>
+                 <li><label for="some-college" class="normal"><input type="checkbox" id="some-college" /> Some College</label></li>
+                 <li><label for="two-yr" class="normal"><input type="checkbox" id="two-yr" /> 2-Year Degree</label></li>
+                 <li><label for="four-year" class="normal"><input type="checkbox" id="four-year" /> 4-Year Degree</label></li>
+                 <li><label for="masters" class="normal"><input type="checkbox" id="masters" /> Masters</label></li>
+                 <li><label for="doctorate" class="normal"><input type="checkbox" id="doctorate" /> Doctorate</label></li>
+               </ul>
+              </li>
+            </ul>
+### -->
+            <div class="row">
+                <div class="col-sm-3">
+                <label class="control-label clearfix" for="industries">Industries</label>
+                <select id="industries" class="form-control" multiple="multiple">
+                    <option value="college">College/University</option>
+                    <option value="hospital"> Hospital</option>
+                    <option value="non-profit"> Non-Profit</option>
+                    <option value="commercial"> Commercial</option>
+                    <option value="govt"> Government</option>
+                    <option value="legal"> Legal</option>
+                    <option value="other"> Other</option>
+                  </select>
+              </div>
+                <div class="col-sm-3">
+                <label class="control-label" for="categories">Categories</label>
+                <select id="categories" multiple="multiple">
+                    <option value="all-cat"> Administrator or Administrative</option>
+                    <option value="admin"> Administrator or Administrative</option>
+                    <option value="business-manager"> Business Manager</option>
+                    <option value="compliance"> Compliance</option>
+                    <option value="dept-admin"> Department Administrator</option>
+                    <option value="fn-ops"> Finance, Operations</option>
+                    <option value="government"> Government</option>
+                    <option value="grants"> Grants and Contracts</option>
+                    <option value="irb"> Institutional Review Board</option>
+                    <option value="other-categ"> Other</option>
+                    <option value="president"> President, CEO, Executive Director</option>
+                    <option value="ra-mgr"> Research Administrator/Manager</option>
+                    <option value="spon-proj"> Sponsored Projects/Programs</option>
+                  </select>
+              </div>
+                <div class="col-sm-3">
+                <label class="control-label" for="job-types">Job Types</label>
+                <select id="job-types" multiple="multiple">
+                    <option value="ft"> Full Time</option>
+                    <option value="pt"> Part Time</option>
+                    <option value="contract"> Contract</option>
+                    <option value="temp-perm"> Temp to Perm</option>
+                    <option value="internship"> Internship</option>
+                  </select>
+              </div>
+                <div class="col-sm-3">
+                <label class="control-label" for="education">Education</label>
+                <select id="education" multiple="multiple">
+                    <option value="hs"> High School</option>
+                    <option value="some-college"> Some College</option>
+                    <option value="two-yr"> 2-Year Degree</option>
+                    <option value="four-year"> 4-Year Degree</option>
+                    <option value="masters"> Masters</option>
+                    <option value="doctorate"> Doctorate</option>
+                  </select>
+              </div>
+              </div>
+          </div>
+            <!-- ### END FILTER OPTIONS ### -->
+            
+            <div class="col-xs-12 alert alert-info clearfix hidden">
+            <p id="filter-results" style="color: #000;"> <strong>FILTERED RESULTS BY:</strong>
+                <button class="btn btn-default">Option 1 <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
+                <button class="btn btn-default">Option 2 <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
+              </p>
+          </div>
+            <div id="job-spotlight" class="col-md-3 col-md-push-9 col-sm-4 col-sm-push-8 col-xs-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading" style="background: #253D68"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Job Spotlight</div>
+                <div class="panel-body">
+                <h3 style="margin-top: 0;"><a href="jobs-software-engineer.html">Content Project Manager</a></h3>
+                <p class="date-loc clearfix"><span class="date-loc" ><em><strong>SRA International</strong> - Hunt Valley, MD</em></span></p>
+                <p>SRA International is looking for a part-time project manager for the Education and Professional Development Micro-Accreditation Task Force.</p>
+                <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>
+              </div>
+              </div>
+          </div>
+            <div id="search-results" class="col-md-9 col-md-pull-3 col-sm-8 col-sm-pull-4 col-xs-12">
+            <div class="job featured-job">
+                <p style="color:#ff8100; margin-bottom: 0;"><em class="fa fa-star-o"></em> <strong>FEATURED JOB </strong><em class="fa fa-star-o"></em></p>
+                <h3> <a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13727">Content Project Manager </a></h3>
+                <p><strong>SRA International</strong> - Arlington, VA <span class="pull-right"> Posted 17 days ago</span> </p>
+                <!-- <p>SRA International is looking for a part-time project manager for the Education and Professional Development Micro-Accreditation Task Force.</p>
+            <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p> --> 
+              </div>
+            <div class="job">
+                <h3><a href="cpm.html">Content Project Manager</a></h3>
+                <p class="tight"> <span class="date-loc col-sm-6 row "><strong>SRA International</strong> - Hunt Valley, MD</span> <span style="margin-right: 15px;"> </span> <span class="date-loc pull-right">Posted 11 Days ago </span></p>
+                <p class="hidden">SRA International is looking for a part-time project manager for the Education and Professional Development Micro-Accreditation Task Force.</p>
+                <p  class="hidden"><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>
+              </div>
+            <div class="job">
+                <h3> <a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13731">Research Compliance Officer</a></h3>
+                <p class="tight"><strong>University of Nevada Reno</strong> -Reno, NV <span class="date-loc pull-right">Posted 11 days ago</span></p>
+                
+                <!--<p class="hiddden">The University of Nevada, Reno Research Integrity Office is recruiting for a Research Compliance Officer. </p>
+            <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p> --> 
+                
+              </div>
+            <div class="job">
+                <h3><a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13730">Associate Vice President for Research</a></h3>
+                <p class="tight"><strong>University of Wyoming</strong> - Laramie, WY <span class="pull-right">Posted 12 days ago</span> </p>
+                <!-- <p>Provides primary support to the Vice President for Research and Economic Development for the administrative oversight of all contract and grant pre-award, award set-up and post-award research administration.  </p>
+            <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>	--> 
+                
+              </div>
+            <div class="job">
+                <h3><a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13729">Director, Technology Transfer and Research Products Center</a></h3>
+                <p class="tight"><strong>University of Wyoming</strong> - Laramie, WY <span class="pull-right">Posted
+                  12 days ago</span> </p>
+                <!-- <p>The University of Wyoming (UW) is seeking an innovative, energetic and experienced individual to serve as Director of the Office of Technology Transfer and Research Products Center (WY-TTRPC).</p>
+          <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p> --> 
+              </div>
+            <div class="job">
+                <h3><a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13728">Grant Officer</a></h3>
+                <p><strong>Salt Lake Community College</strong> - 
+                Salt Lake City, UT <span class="pull-right"> Posted 17 days ago</span> </p>
+                
+                <!--  <p>The Office of Sponsored Projects inspires superior grant practice by developing and maintaining a robust grant administration infrastructure, and providing exceptional service and leadership in the pursuit and management of scholarly grant-related activities at Salt Lake Community College. </p>
+          <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p> --> 
+              </div>
+            <div class="job">
+                <h3><a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13726">Director of Administrative and Research Systems</a></h3>
+                <p><strong>Stony Brook University</strong> - 
+                Stony Brook, NY <span class="pull-right"> Posted 18 days ago</span> </p>
+                
+                <!-- <p>Preferred Qualifications: Advanced degree. Knowledge of research administration. Experience with IT solutions in a research or university environment. </p>
+          <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p> --> 
+              </div>
+            <div class="job">
+                <h3><a href="index.cfm?fuseaction=jobs.viewJobDetail&amp;jobId=13724">Senior Grants Administrator - Morgridge College Of Education</a></h3>
+                <p><strong>University of Denver</strong> - 
+                Denver, CO <span class="pull-right"> Posted 19 days ago</span> </p>
+                
+                <!-- <p>Position Summary The role of the Senior Grants Administrator is to support to the college in the development and management of grants, gifts, and contracts.  </p>
+          <p><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p> --> 
+              </div>
+            <button class="btn btn-primary btn-block stack-space-lg">SHOW ALL JOBS</button>
+          </div>
+          </div>   
+            
+          </div>
+          <div role="tabpanel" class="tab-pane clearfix" id="saved-resumes">
+            <div class="row">
+              <!-- ### SAVED SRA RESUMES ### -->
+              <div class="col-sm-12">
+                <h2 class="stack-space">My Saved SRA Cover Letters &amp; Resumes</h2>
+                <h3 class="stack-space">Cover Letter(s)</h3>
+                <div class="panel panel-primary">
+                <div class="showDetails open btn btn-lg outline-btn btn-block" style="text-align: left;">
+                  <a href="#">Academic Cover Letter</a> 
+                </div>
+                
+                <div id="academic-cover-letter" class="panel-body details" style="background-color: #;" >
+                  <div class="col-md-8 col-sm-8" style="background: white;">
+                    <p class="stack-space text-center"><strong>Sally Davies</strong><br>
+                    142 Facebook Blvd. <br>
+                    Palo Alto, California, 94301 United States<br>
+                    (423)135-4624<br>
+                    sally.davies@gmail.com</p>
+
+                    <p class="stack-space-lg">Dr. Jane Smith <br>
+                    American State University<br>
+                    Palo Alto, California, 94301<br>
+                      professor.smith@email.com</p>
+
+                    <p class="stack-space-lg">October 30, 2015</p>
+
+                    <p>Dear Professor Jane Smith,</p>
+
+                    <p>I am writing to apply for the postion of Assistant Professor of Anthropology: Evolutionary Social Science, as advertised on the American State University website. I am a graduate from Hayward University, and am currently a doctoral candidate at the University of Osford where I am due to complete my PhD requirements by May 2016. I am working on a dissertation under the direction of Dr John Jacobs. I believe that my previous teaching experience, partnered with my research in human behaviour and signalling theory make me a strong candidate for the position.</p>
+                    <p>As my Curriculum Vitae demonstates, I have taught a variety of ethnographic writing courses. My doctoral dissertation examines human congnitive ability and the socioecological underpinnings of behavioural variation, using qualitative survey-based research methods. I also run an ethnographic writing course at the University of Osford, mentoring undergraduate students in ethnographic data collection, analysis and writing. I seek to engage students by examining ways they can actively participate in class discussions, often using app technology and new collaborative platforms. I look forward to individual conferences with students, ascertaining their research direction and assisting in the composition of their theories and experiments.</p>
+                    <p>Prior to my academic career I worked as a photographer and filmmaker for various organizations for 5+ years. In 2012 & 2013, I taught a Visual Anthropology International Exchange program in Bangladesh using sound recording, photography and film. I beleive these skills provide me with a broad perspective of ethnography, enhancing my research methodology and passion for student engagement.</p>
+                    <p>I have enclosed my curriculum vitae, statements of teaching philosophy, research interests and reference letters. I would enjoy discussing this position with you in the weeks to come. If you require any additional infomation, please feel free to contact me. Thank you for your time and consideration.</p>
+                    <p>Sincerely,<br>
+                    Sally Davis</p>
+                  </div>
+                  <div class="col-sm-4">
+                    <button class="btn btn-lg btn-primary btn-block text-left" style="text-align: left"><span class="glyphicon glyphicon-pencil" aria-hidden="true" ></span> Edit This Cover Letter</button>
+                    <button class="btn btn-lg btn-danger btn-block text-left" style="text-align: left"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> Remove This Cover Letter</button>
+                    <button class="btn btn-lg btn-info btn-block text-left" style="text-align: left"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print This Cover Letter</button>
+                  </div>
+                  
+                </div>
+                </div>
+                <button class="btn btn-success stack-space-lg"><span class="glyphicon glyphicon-plus"></span> Add New Cover Letter</button>
+                  
+                  
+                <h3 class="stack-space">Resume</h3>
+                <div class="panel panel-primary">
+                <div class="showDetails open btn btn-lg outline-btn btn-block" style="text-align: left;">
+                  <a href="#">Academic Resume</a> 
+                </div>
+                
+                <div id="academic-resume" class="panel-body details">
+                  <div class="col-md-9 col-sm-9" style="background: white;">
+                    <p class="stack-space text-center"><strong>Sally Davies</strong><br>
+                    142 Facebook Blvd. <br>
+                    Palo Alto, California, 94301 United States<br>
+                    (423)135-4624<br>
+                    sally.davies@gmail.com</p>
+
+                    <p class="stack-space-lg">Dr. Jane Smith <br>
+                    American State University<br>
+                    Palo Alto, California, 94301<br>
+                      professor.smith@email.com</p>
+
+                    <p class="stack-space-lg">October 30, 2015</p>
+
+                    <p>Dear Professor Jane Smith,</p>
+
+                    <p>I am writing to apply for the postion of Assistant Professor of Anthropology: Evolutionary Social Science, as advertised on the American State University website. I am a graduate from Hayward University, and am currently a doctoral candidate at the University of Osford where I am due to complete my PhD requirements by May 2016. I am working on a dissertation under the direction of Dr John Jacobs. I believe that my previous teaching experience, partnered with my research in human behaviour and signalling theory make me a strong candidate for the position.</p>
+                    <p>As my Curriculum Vitae demonstates, I have taught a variety of ethnographic writing courses. My doctoral dissertation examines human congnitive ability and the socioecological underpinnings of behavioural variation, using qualitative survey-based research methods. I also run an ethnographic writing course at the University of Osford, mentoring undergraduate students in ethnographic data collection, analysis and writing. I seek to engage students by examining ways they can actively participate in class discussions, often using app technology and new collaborative platforms. I look forward to individual conferences with students, ascertaining their research direction and assisting in the composition of their theories and experiments.</p>
+                    <p>Prior to my academic career I worked as a photographer and filmmaker for various organizations for 5+ years. In 2012 & 2013, I taught a Visual Anthropology International Exchange program in Bangladesh using sound recording, photography and film. I beleive these skills provide me with a broad perspective of ethnography, enhancing my research methodology and passion for student engagement.</p>
+                    <p>I have enclosed my curriculum vitae, statements of teaching philosophy, research interests and reference letters. I would enjoy discussing this position with you in the weeks to come. If you require any additional infomation, please feel free to contact me. Thank you for your time and consideration.</p>
+                    <p>Sincerely,<br>
+                    Sally Davis</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <button class="btn btn-lg btn-primary btn-block text-left" style="text-align: left"><span class="glyphicon glyphicon-pencil" aria-hidden="true" ></span> Edit </button>
+                    <button class="btn btn-lg btn-danger btn-block text-left" style="text-align: left"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> Remove</button>
+                    <button class="btn btn-lg btn-info btn-block text-left" style="text-align: left"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print </button>
+                  </div>
+                  
+                </div>
+                </div>
+                <button class="btn btn-success stack-space-lg"><span class="glyphicon glyphicon-plus"></span> Add New Resume</button>
+
+                
+                
+              </div>
+                
+            
+            </div>
+          
+          
+          </div>
+          <div role="tabpanel" class="tab-pane" id="saved-searches">
+            <h2>Saved Jobs</h2>
+            <table width="100%" class="table table-bordered table-striped">
+  <thead>
+    <tr style="border-bottom: 1px solid #333;">
+      <th scope="col">Job Title</th>
+      <th scope="col">Company</th>
+      <th scope="col">Location</th>
+      <th scope="col">Featured</th>
+      <th scope="col">Status</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="cpm.html">Content Project Manager</a></td>
+      <td>SRA International</td>
+      <td>Arlington, VA</td>
+      <td>Yes</td>
+      <td><p class="tight"> Applied to 17 days ago. </p>
+        
+        <a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> Remove</a> <span class="vert-divider" style="color: #aaa; padding: 0 5px;"> | </span> 
+        <a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Other Option</a></td>
+      
+    </tr>
+    <tr>
+      <td><a href="cpm.html">Research Compliance Officer</a></td>
+      <td>University of Nevada Reno</td>
+      <td>Reno, NV</td>
+      <td>No</td>
+      <td><p class="tight"> Applied to  11 days ago. 
+        </p>
+        
+        <a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> Remove</a> <span class="vert-divider" style="color: #aaa; padding: 0 5px;"> | </span> 
+        <a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Other Option</a></td>
+      
+    </tr>
+  </tbody>
+</table>
+          
+          </div>
+          <!-- ### INVOICES ### -->
+          <div role="tabpanel" class="tab-pane" id="invoices">
+          <table width="100%" class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Job ID</th>
+      <th scope="col">Product</th>
+      <th scope="col">Job Title</th>
+      <th scope="col">Job Contact Name</th>
+      <th scope="col">Job Contact Organization</th>
+      <th scope="col">Date Submitted</th>
+      <th scope="col">Payment Method</th>
+      <th scope="col">Reference Number</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#invoiceModal" data-toggle="modal" data-target="#invoiceModal">13747</a></td>
+      <td>1 (30 Day) Posting</td>
+      <td>Content Project Manager</td>
+      <td>Jay Berger</td>
+      <td>Huntington Medical Research Institutes</td>
+      <td>2018-01-16 12:29:18.51</td>
+      <td>On-line</td>
+      <td>	AL0FF5936575</td>
+      <td>$500.00</td>
+    </tr>
+    <tr>
+      <td><a href="#invoiceModal" data-toggle="modal" data-target="#invoiceModal">13748</a></td>
+      <td>1 (30 Day) Posting</td>
+      <td>Research Compliance Officer</td>
+      <td>Jay Berger</td>
+      <td>Huntington Medical Research Institutes</td>
+      <td>2018-01-17 10:14:56.51</td>
+      <td>On-line</td>
+      <td>	AL0FF5936576</td>
+      <td>$500.00</td>
+    </tr>
+  </tbody>
+</table>            
+            
+          </div>
+          
+          <div role="tabpanel" class="tab-pane" id="job-reports">Content TBD</div>
+          <div role="tabpanel" class="tab-pane" id="acct-profile">This page will show the Account Profile content from the other page within this tab as an iFrame.</div>
+        </div>
+      </div>
+          </div>
+          
+        
+      </div>
+      </div>
+  </div>
+  </section>
+
+
+
+<footer class="footer">
+    <div class="container">
+    <div class="col-sm-4">
+        <h3>SRA Career Center</h3>
+        <ul class="list">
+        <li><a href="index.cfm?fuseaction=seekers.viewGateway"><i class="fa fa-angle-right"></i> Job Seekers</a></li>
+        <li><a href="index.cfm?fuseaction=employers.viewGateway"><i class="fa fa-angle-right"></i> Employers</a></li>
+        <li><a href="index.cfm?fuseaction=careerCenter.viewFees"><i class="fa fa-angle-right"></i> Pricing</a></li>
+        <li><a href="http://www.srainternational.org/contact"><i class="fa fa-angle-right"></i> Contact</a></li>
+      </ul>
+      </div>
+    <!-- end section -->
+    
+    <div class="col-sm-4">
+        <h3>SRA International</h3>
+        <ul class="list">
+        <li><a href="http://srainternational.org/about-sra-international"><i class="fa fa-angle-right"></i> About SRA International</a></li>
+        <li><a href="http://srainternational.org/learn"><i class="fa fa-angle-right"></i> SRA Learning Institute</a></li>
+        <li><a href="http://srainternational.org/publications"><i class="fa fa-angle-right"></i> SRA Publications</a></li>
+        <li><a href="http://srainternational.org/membership"><i class="fa fa-angle-right"></i> SRA Membership</a></li>
+      </ul>
+      </div>
+    <!-- end section -->
+    
+    <div class="col-sm-4 last">
+        <div class="clearfix">
+        <h3>Contact Us</h3>
+        <p >Society of Research Administrators International<br>
+            1560 Wilson Blvd., Suite 310<br>
+            Arlington, VA 22209</p>
+        <p>+1 703-741-0140<br>
+            FAX +1 703-741-0142</p>
+        <a href="http://www.srainternational.org" target="_blank" style="margin-right: 10px;">www.srainternational.org</a> <a href="https://www.facebook.com/SocResAdminINTL" target="_blank" style="margin-right: 10px;"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/SocietyRAIntl" target="_blank" style="margin-right: 10px;"><i class="fa fa-twitter"></i></a><a href="http://www.linkedin.com/groups?gid=1959806&amp;mostPopular=" target="_blank" style="margin-right: 10px;"><i class="fa fa-linkedin"></i></a> </div>
+      </div>
+    <!-- end section --> 
+    
+  </div>
+  </footer>
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="js/vendor/jquery/jquery.1.12.4.min.js"></script> 
+<!-- ###
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    ### --> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="js/ie10-viewport-bug-workaround.js"></script> 
+
+<!-- ### MULTISELECT FROM http://davidstutz.de/bootstrap-multiselect/index.html#getting-started ### -->
+<link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css">
+<style>
+      span.multiselect-native-select {display: block;}
+      span.multiselect-native-select .btn-group {width: 100%;}
+      span.multiselect-native-select .btn-group .multiselect.dropdown-toggle.btn.btn-default.btn-block {white-space: inherit; text-align: left;}
+    </style>
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script> 
+<!-- Initialize the plugin: --> 
+<script type="text/javascript">
+      $(document).ready(function() {
+          $('#industries, #categories, #job-types, #education').multiselect({
+            includeSelectAllOption: true,
+            selectAllNumber: false,
+            numberDisplayed: 0
+        });
+      });
+  </script> 
+<!-- ### END MULTISELECT AND EK'S CUSTOMIZATIONS ### --> 
+    
+<!-- ### TOGGLE ONLY NEXT COMPONENT ### --> 
+<script>
+$('.showDetails').click(function(){
+	$(this).toggleClass('open');
+	$(this).next('.details').slideToggle(500);
+});
+    </script>  
+    
+<!-- ### MATCH HEIGHT from http://codepen.io/micahgodbolt/pen/FgqLc ### --> 
+
+<script>
+equalheight = function(container){
+var currentTallest = 0,
+     currentRowStart = 0,
+     rowDivs = new Array(),
+     $el,
+     topPosition = 0;
+
+ $(container).each(function() {
+   $el = $(this);
+   $($el).height('auto')
+
+   topPostion = $el.position().top;
+
+
+
+   if (currentRowStart != topPostion) {
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+       rowDivs[currentDiv].height(currentTallest);
+     }
+
+     rowDivs.length = 0; // empty the array
+     currentRowStart = topPostion;
+     currentTallest = $el.height();
+     rowDivs.push($el);
+   } else {
+
+     rowDivs.push($el);
+
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+
+  }
+
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+
+     rowDivs[currentDiv].height(currentTallest);
+
+   }
+
+ });
+
+}
+
+
+
+$(window).load(function() {
+
+  equalheight('.inside-full-height');
+
+	equalheight('.inside-qr-height');
+
+});
+
+
+
+
+
+$(window).resize(function(){
+
+  equalheight('.inside-full-height');
+
+	equalheight('.inside-qr-height');
+
+});
+
+</script> 
+
+<!-- ### END MATCH HEIGHT from http://codepen.io/micahgodbolt/pen/FgqLc ### -->
+
+</body>
+</html>

@@ -119,7 +119,20 @@
 
 <!-- /container -->
 <section class="below-fh">
-  <div class="banner-image stack-space" style="background: url(img/hand-3044387_1280.jpg) center -30px no-repeat transparent; background-attachment: scroll; background-size: 100%; height: 100vh; max-height: 500px;" >
+  <div class="main-photo-temp" style="height: 300px; padding: 50px; background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003863+0,00aae8+49,00aae8+49,fec832+100 */
+background: #003863; /* Old browsers */
+background: -moz-linear-gradient(45deg, #003863 0%, #00aae8 49%, #00aae8 49%, #fec832 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #003863 0%,#00aae8 49%,#00aae8 49%,#fec832 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #003863 0%,#00aae8 49%,#00aae8 49%,#fec832 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003863', endColorstr='#fec832',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */"
+                                      >
+    <div class="container text-center" style="color: white; max-width: 600px">
+      <h1 style="margin-top: 30px; text-shadow: 10px 10px 30px rgba(0,0,0,.5)">This is a temporary container until we find an image that will work.</h1>
+      
+    </div>
+  </div>
+  <!-- ### PHOTO HIDDEN ### -->
+  <div class="hidden banner-image stack-space" style="background: url(img/hand-3044387_1280.jpg) center -30px no-repeat transparent; background-attachment: scroll; background-size: 100%; height: 100vh; max-height: 500px;" >
     <!-- ### <img src="img/hand-3044387_1280.jpg" width="100%"  alt="" style="max-height: 500px;"/> ### -->
     <div class="tag-line-container" style="margin: -60px auto 0; position: relative; text-align: right; color: white; font-size: 30px; background: rgba(233,235,235,.4)">
 <p class="lead" style="font-size: 30px; margin: 0 auto; max-width: 1140px; text-align: right; padding-right: 15px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; text-transform: capitalize; text-shadow: 2px 2px 5px rgba(0,0,0,.6)" >Top talent supporting great advances in research</p>
@@ -138,7 +151,7 @@
     <div class="input-group">
       <input type="text" class="form-control" placeholder="Search by keyword">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">GO</button>
+        <a href="index-filtered.html" class="btn btn-default" type="button">GO</a>
       </span>
     </div><!-- /input-group -->
           <a href="javascript:void(0);" role="button" class="adv" onClick="$('#filter-options').slideToggle(); $(this).toggleClass('open')">Advanced Search</a>
@@ -578,8 +591,10 @@
         <h4 class="modal-title" id="loginModalLabel" style="   font-family: 'Source Sans Pro', sans-serif; color: white; font-weight: 400;">Career Center Log In</h4>
       </div>
       <div class="modal-body" style="background: #0d2857">
-	<form action="index.cfm?fuseaction=utils.authenticate" method="post" name="loginFrm" id="loginFrm">
+	<!--### <form action="index.cfm?fuseaction=utils.authenticate" method="post" name="loginFrm" id="loginFrm">
 		<input type="Hidden" name="redirect" value="index.cfm?fuseaction=resumeSearch.resetsearch">
+### -->
+        <form action="index-post-login.html">
 		  <div class="form-group">
 	               	<label for="name" class="control-label" style="color: white;"><strong>Username</strong></label>
 	               	<input name="login" class="form-control" type="text" id="login" value="">
