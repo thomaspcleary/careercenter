@@ -74,7 +74,11 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#"> <img src="img/sra-vector-logo.svg" height="60" style="margin-top: -4px;" alt=""/> </a> 
+        <a class="navbar-brand" href="employers-post-login.html">
+        <img src="img/sra-logo-only-sm.jpg" width="166" height="20" alt="SRA International Career Center Logo"/>
+        <h1 style="margin-top: 0; color: #253D68; font-size: 30px;">Career Center</h1></a>
+      <!-- ### <a class="navbar-brand" href="#">
+       <img src="img/sra-vector-logo.svg" height="60" style="margin-top: -4px;" alt=""/> </a> ### -->
         <!-- ### SIGN IN ### -->
         <div class="dropdown visible-xs" style="float: right; right: 15px;">
           <button class="dropdown-toggle" type="button" id="signinMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width: 60px; display: inline-block"> <img src="img/account-profile.svg" alt="Sign In" style="width: 34px; margin-top: 6px"/> <span class="caret" style="position: absolute; bottom: 10px;"></span> </button>
@@ -147,17 +151,22 @@
             Posted Jobs
           </a></li>
           <li role="presentation" style="width:16.66666667%; text-align: center"><a href="#saved-resumes" aria-controls="saved-resumes" role="tab" data-toggle="tab"><img src="img/fpo-resume-search.png" width="60px"  alt="" style="display:block; margin: 0 auto 10px"/>
-            <p class="tight text-center">Resumes</p>
+            <p class="tight text-center">Applicants</p>
           </a></li>
-          <li role="presentation" style="width:16.66666667%; text-align: center" class="hidden"><a href="#saved-searches" aria-controls="saved-searches" role="tab" data-toggle="tab"><img src="img/fpo-saved-search.png" width="60px"  alt="" style="display:block; margin: 0 auto 10px"/>
+          <li role="presentation" style="width:16.66666667%; text-align: center"><a href="#saved-resumes" aria-controls="saved-resumes" role="tab" data-toggle="tab"><img src="img/fpo-resume-search.png" width="60px"  alt="" style="display:block; margin: 0 auto 10px"/>
+            <p class="tight text-center">Resume Search</p>
+          </a></li>
+          <li role="presentation" style="width:16.66666667%; text-align: center"><a href="#saved-searches" aria-controls="saved-searches" role="tab" data-toggle="tab"><img src="img/fpo-saved-search.png" width="60px"  alt="" style="display:block; margin: 0 auto 10px"/>
             <p class="tight text-center">Saved Searches</p>
             </a></li>
           <li role="presentation" style="width:16.66666667%; text-align: center"><a href="#invoices" aria-controls="invoices" role="tab" data-toggle="tab"><img src="img/fpo-saved-resumes.png" width="60px"  alt="" style="display:block; margin: 0 auto 10px"/>
             <p class="tight text-center">Invoices</p>
           </a></li>
+          <!-- ###
           <li role="presentation" style="width:16.66666667%; text-align: center"><a href="#job-reports" aria-controls="job-reports" role="tab" data-toggle="tab"><img src="img/analytics-flaticon.svg" width="60px"  alt="" style="display:block; margin: 0 auto 10px"/>
             <p class="tight text-center">Job Reports</p>
             </a></li>
+          ### -->
           <li role="presentation" style="width:16.66666667%; text-align: center"><a href="#acct-profile" aria-controls="acct-profile" role="tab" data-toggle="tab"><img src="img/account-profile.svg" width="60px" alt="" style="display:block; margin: 0 auto 10px"/>
             <p class=" tight text-center">Account Profile</p>
             </a></li>
@@ -168,7 +177,7 @@
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="jobs-posted">
             
-            <table width="100%" class="table table-bordered table-striped">
+            <table width="100%" class="table table-striped">
   <thead>
     <tr style="border-bottom: 1px solid #333;">
       <th scope="col">Job Title</th>
@@ -187,7 +196,7 @@
       <td>Yes</td>
       <td><p class="tight"> Posted 17 days ago. 
         <span class="text-danger">Expires in 13 days</span></p>
-        <p class="tight">This post had <strong>8</strong> applicants. <a href="#">View resumes</a></p>
+        <p class="tight">This post had <a href="#"><strong>(8)</strong> applicants.</a></p>
         <a href="#"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Extend Time</a> <span class="vert-divider" style="color: #aaa; padding: 0 5px;"> | </span> 
         <a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> View Invoice</a></td>
       
@@ -215,20 +224,27 @@
               <div class="col-sm-6">
                 <h3 class="stack-space">Saved SRA Resumes</h3>
                 <div class="job">
-                  <h3><a href="cpm.html">Evan Katz</a></h3>
+                  <h3><a href="cpm.html">Evan Katz <img src="img/icon-pdf.png"  height="20" alt="View PDF Document"/></a></h3>
                   <p class="tight">
                   <span class="date-loc ">Catonsville, MD</span> <span style="margin-right: 15px;">  </span> 
-                    <span class="date-loc pull-right">Saved 11 Days ago </span></p>
-                        <p><em><strong>What information should go here?!?!</strong></em></p>
+                    <span class="date-loc pull-right">Saved 17 Days ago </span></p>
+                        
                   <p class="hidden">SRA International is looking for a part-time project manager for the Education and Professional Development Micro-Accreditation Task Force.</p>
                   <p  class="hidden"><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>
                 </div>
                 <div class="job">
-                  <h3><a href="cpm.html">Evan Katz</a></h3>
-                  <p class="tight">
-                  <span class="date-loc ">Catonsville, MD</span> <span style="margin-right: 15px;">  </span> 
-                    <span class="date-loc pull-right">Saved 11 Days ago </span></p>
-                        <p><em><strong>What information should go here?!?!</strong></em></p>
+                  <h3><a href="cpm.html">Tim Cleary <img src="img/icon-document.svg" height="20" alt="Text Document"/></a> </h3>
+                  <p> Hagerstown, MD    
+                    <span class="date-loc pull-right">Saved 17 Days ago</span> </p>
+                  
+                  <p class="hidden">SRA International is looking for a part-time project manager for the Education and Professional Development Micro-Accreditation Task Force.</p>
+                  <p  class="hidden"><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>
+                </div>
+                <div class="job">
+                  <h3><a href="cpm.html">Jane Smith <img src="img/icons8-microsoft-word.svg" height="24" alt=""/></a></h3>
+                  <p> Baltimore, MD    
+                    <span class="date-loc pull-right">Saved 11 Days ago</span> </p>
+                  
                   <p class="hidden">SRA International is looking for a part-time project manager for the Education and Professional Development Micro-Accreditation Task Force.</p>
                   <p  class="hidden"><a href="#">Read More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> </p>
                 </div>
@@ -392,15 +408,12 @@
                     <li>
                       <input type="checkbox" value="3162" name="ResumeID" style="float:right">
                       <a href="#" data-toggle="modal" data-target="#resumeModal">
-                        <p></p><h4 style="margin-bottom: 0px;"><div style="color:#1475a4">Mario Carranza</div></h4>
+                        <h4 style="margin-bottom: 0px; color:#1475a4">Mario Carranza</h4>
                           Mario Carranza
-                          <div style="color:#888">
+                          <span style="color:#888; float: right">
                             18 days ago
-
-                          </div>
-                        <p></p>
+                          </span>
                       </a>
-
                       <hr>
                     </li>
 
@@ -408,13 +421,11 @@
                     <li>
                       <input type="checkbox" value="3159" name="ResumeID" style="float:right">
                       <a href="index.cfm?fuseaction=resumes.viewResumeDetailPopup&amp;ResumeID=3159">
-                        <p></p><h4 style="margin-bottom: 0px;"><div style="color:#1475a4">Grants and Contracts Experience</div></h4>
+                        <h4 style="margin-bottom: 0px; color:#1475a4">Grants and Contracts Experience</h4>
                           Jonathan Moreno
-                          <div style="color:#888">
+                          <span style="color:#888; float: right">
                             70 days ago
-
-                          </div>
-                        <p></p>
+                          </span>
                       </a>
 
                       <hr>
@@ -424,15 +435,12 @@
                     <li>
                       <input type="checkbox" value="3157" name="ResumeID" style="float:right">
                       <a href="index.cfm?fuseaction=resumes.viewResumeDetailPopup&amp;ResumeID=3157">
-                        <p></p><h4 style="margin-bottom: 0px;"><div style="color:#1475a4">Grants &amp; Contracts Manager</div></h4>
+                        <h4 style="margin-bottom: 0px; color:#1475a4">Grants &amp; Contracts Manager</h4>
                           Courtney Miller
-                          <div style="color:#888">
+                          <span style="color:#888; float: right">
                             114 days ago
-
-                          </div>
-                        <p></p>
+                          </span>
                       </a>
-
                       <hr>
                     </li>
 
@@ -440,12 +448,12 @@
                     <li>
                       <input type="checkbox" value="3155" name="ResumeID" style="float:right">
                       <a href="index.cfm?fuseaction=resumes.viewResumeDetailPopup&amp;ResumeID=3155">
-                        <p></p><h4 style="margin-bottom: 0px;"><div style="color:#1475a4">Experienced Research Administrator in an Academic Health Sciences Setting</div></h4>
+                        <h4 style="margin-bottom: 0px; color:#1475a4">Experienced Research Administrator in an Academic Health Sciences Setting</h4>
                           Rebecca Nickleson
-                          <div style="color:#888">
+                          <span style="color:#888; float: right">
                             120 days ago
-                          </div>
-                        <p></p>
+                          </span>
+                        
                       </a>
 
                       <hr>
@@ -587,7 +595,8 @@
 
 	  <tr valign="center">
 
-	    <td align="left"><a href="https://careercenter.srainternational.org/fb/index.cfm?fuseaction=careerCenter.viewGateway" target="_blank"><img src="img/sra-vector-logo.svg" height="60" style="margin-top: -4px;" alt=""></a> </td>
+	    <td align="left"><a href="https://careercenter.srainternational.org/fb/index.cfm?fuseaction=careerCenter.viewGateway" target="_blank"><img src="img/sra-logo-only-sm.jpg" width="166" height="20" alt="SRA International Career Center Logo"/>
+        <h1 style="margin-top: 0; color: #253D68; font-size: 30px;">Career Center</h1></a> </td>
 
 	    <td align="right"><br></td></tr></tbody></table>
         <table align="center" bgcolor="#006699" border="0" cellpadding="1" cellspacing="0" width="100%">
